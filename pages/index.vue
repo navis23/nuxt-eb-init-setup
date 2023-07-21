@@ -1,6 +1,6 @@
 <template>
     <div class="px-4 lg:px-32 py-10">
-        <h1 class="text-emerald-400 text-4xl font-bold uppercase font-oswald">Basic Setup for All EB Project with nuxt 3</h1>
+        <h1 class="text-emerald-400 text-4xl font-bold uppercase font-oswald">Basic Example for EB CLI Template with nuxt 3</h1>
         <div class="mt-4">
             <p class="uppercase font-bold font-oswald text-xl pb-2 text-sky-600">test nuxt icon</p>
             <div class="flex gap-4 flex-wrap pt-2">
@@ -133,6 +133,16 @@
             </div>
 
         </div>
+
+        <div class="mt-4 border-t pt-2">
+            <p class="uppercase font-bold font-oswald text-xl pb-2 text-sky-600">text nuxt image optimize</p>
+            <div class="flex flex-wrap gap-3">
+                <nuxt-img src="/img/bg01.png" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded md:h-48" />
+                <nuxt-img src="/img/bg02.png" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded md:h-48" />
+                <nuxt-img src="/img/bg03.JPG" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded md:h-48" />
+            </div>
+        </div>
+
         <ClientOnly>
             <HeadlessDialog :open="isOpen" @close="setIsOpen" class="relative z-50">
                 <!-- The backdrop, rendered as a fixed sibling to the panel container -->

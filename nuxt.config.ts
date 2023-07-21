@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     'nuxt-icon',
+    '@nuxt/image',
     'nuxt-headlessui',
     '@formkit/nuxt'
   ],

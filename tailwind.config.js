@@ -15,8 +15,7 @@ module.exports = {
     extend: {
       fontFamily: {
         oswald : ['Oswald'],
-        montserrat : ['Montserrat'],
-        tektur : ['Tektur'],
+        opensans : ['Open Sans'],
       }
     },
   },

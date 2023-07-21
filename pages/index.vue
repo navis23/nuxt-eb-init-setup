@@ -63,35 +63,34 @@
 
         <div class="mt-4 border-t pt-2 flex flex-col gap-1">
             <h1 class="text-5xl font-semibold uppercase font-oswald text-rose-500">
-                test font oswald for heading
+                test font oswald for text heading
             </h1>
             <h3 class="text-5xl font-semibold font-oswald text-rose-500">
-                test font oswald for heading
+                test font oswald for text heading
             </h3>
             <h3 class="text-3xl font-semibold uppercase font-oswald text-rose-500">
-                test font oswald for heading
+                test font oswald for text heading
             </h3>
             <h3 class="text-3xl font-semibold font-oswald text-rose-500">
-                test font oswald for heading
+                test font oswald for text heading
+            </h3>
+        
+            <h3 class="text-3xl">
+                Test Font Open Sans for main text body
+            </h3>
+            <h3 class="text-2xl">
+                Test Font Open Sans for main text body
             </h3>
             <h3 class="text-xl">
-                test font Montserrat for body
+                Test Font Open Sans for main text body
             </h3>
             <h3 class="text-lg">
-                test font Montserrat for body
+                Test Font Open Sans for main text body
             </h3>
             <h3 class="text-base">
-                test font Montserrat for body
+                Test Font Open Sans for main text body
             </h3>
-            <h3 class="text-xl font-tektur text-teal-500">
-                test font tektur for variation
-            </h3>
-            <h3 class="text-lg font-tektur text-teal-500">
-                test font tektur for variation
-            </h3>
-            <h3 class="text-base font-tektur text-teal-500">
-                test font tektur for variation
-            </h3>
+        
         </div>
         
         <div class="mt-4 border-t pt-2">
@@ -120,7 +119,7 @@
                         leave-to="opacity-0"
                     >
                         <span>
-                            <Icon name="carbon:touch-1-filled" class="text-5xl font-bold text-sky-500" />
+                            <Icon name="carbon:touch-1-filled" class="text-5xl font-bold text-lime-500" />
                         </span>
                     </HeadlessTransitionRoot>
                 </ClientOnly>
@@ -137,9 +136,10 @@
         <div class="mt-4 border-t pt-2">
             <p class="uppercase font-bold font-oswald text-xl pb-2 text-sky-600">text nuxt image optimize</p>
             <div class="flex flex-wrap gap-3">
-                <nuxt-img src="/img/bg01.png" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded md:h-48" />
-                <nuxt-img src="/img/bg02.png" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded md:h-48" />
-                <nuxt-img src="/img/bg03.JPG" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded md:h-48" />
+                <nuxt-img src="/img/bg01.png" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded shadow-md md:h-48" />
+                <nuxt-img src="/img/bg02.png" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded shadow-md md:h-48" />
+                <nuxt-img src="/img/bg03.JPG" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded shadow-md md:h-48" />
+                <nuxt-img src="/img/bg04.png" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded shadow-md md:h-48" />
             </div>
         </div>
 

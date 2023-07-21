@@ -9,19 +9,13 @@
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Open Sans';
     font-display: swap;
-    src: url('~/assets/fonts/Montserrat-Regular.ttf'), url('~/assets/fonts/Montserrat-Light.ttf'), url('~/assets/fonts/Montserrat-Medium.ttf'), url('~/assets/fonts/Montserrat-SemiBold.ttf'), url('~/assets/fonts/Montserrat-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'Tektur';
-    font-display: swap;
-    src: url('~/assets/fonts/Tektur-Regular.ttf'), url('~/assets/fonts/Tektur-Medium.ttf'), url('~/assets/fonts/Tektur-SemiBold.ttf'), url('~/assets/fonts/Tektur-Bold.ttf');
+    src: url('~/assets/fonts/OpenSans-Regular.ttf'), url('~/assets/fonts/OpenSans-Light.ttf'), url('~/assets/fonts/OpenSans-Medium.ttf'), url('~/assets/fonts/OpenSans-SemiBold.ttf'), url('~/assets/fonts/OpenSans-Bold.ttf');
 }
 
 @layer base {
     html {
-        font-family: 'Montserrat';
+        font-family: 'Open Sans';
     }
 }

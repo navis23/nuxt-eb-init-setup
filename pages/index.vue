@@ -1,9 +1,14 @@
 <template>
     <div class="px-4 lg:px-32 py-10">
         <h1 class="text-emerald-400 text-4xl font-bold uppercase font-oswald">Basic Example for EB CLI Template with nuxt 3</h1>
+        
+        <!-- test dependency nuxt icon -->
         <div class="mt-4">
             <p class="uppercase font-bold font-oswald text-xl pb-2 text-sky-600">test nuxt icon</p>
             <div class="flex gap-4 flex-wrap pt-2">
+                <div>
+                    <Icon name="svg-spinners:clock" class="font-semibold text-4xl text-teal-500" />
+                </div>
                 <div>
                     <Icon name="carbon:moon" class="font-semibold text-4xl text-purple-500" />
                 </div>
@@ -19,10 +24,15 @@
                 <div>
                     <Icon name="carbon:sun" class="font-semibold text-4xl text-yellow-500" />
                 </div>
+                <div>
+                    <Icon name="svg-spinners:tadpole" class="font-semibold text-4xl text-red-500" />
+                </div>
             </div>
 
         </div>
-        <div class="mt-4 border-t pt-2">
+
+        <!-- test dependency nuxt form kit -->
+        <div class="mt-4 border-t py-2">
             <p class="uppercase font-bold font-oswald text-xl pb-2 text-sky-600">test formkit</p>
             <FormKit
                 v-model="value"
@@ -32,27 +42,39 @@
                 max="11"
                 help="Select your volume level."
                 />
-                <p class="-mt-3 mb-2">
+                <p class="font-oswald uppercase text-teal-500 -mt-3 mb-2">
                     {{ value }}
                 </p>
                 <FormKit
+                    v-model="time"
                     type="time"
                     label="Time"
                     value="23:15"
                     help="jam piro muleh kowe le?"
                 />
+                <p class="font-oswald uppercase text-fuchsia-500 -mt-3 mb-2">
+                    {{ time }}
+                </p>
+
                 <FormKit
+                    v-model="name"
                     type="text"
                     label="Your username"
                     placeholder="you nameeeeee"
                     help="Pick a username people will remember!"
                 />
+                <p class="font-oswald uppercase text-rose-500 -mt-3 mb-2">
+                    {{ name }}
+                </p>
         </div>
 
+        <!-- test call api with axios -->
         <div class="mt-4 border-t pt-2">
-            <p class="uppercase font-bold font-oswald text-xl pb-2 text-sky-600">text axios and fecth data</p>
+            <p class="uppercase font-bold font-oswald text-xl pb-2 text-sky-600">test axios and fecth data</p>
             <div class="p-3 border-2 shadow-sm rounded w-96" :class="loadingIcon ? 'border-red-500' : ''">
-                <p v-if="loadingIcon" class="text-center"><Icon name="carbon:circle-packing" class="font-semibold text-6xl text-red-500" /></p>
+                <p v-if="loadingIcon" class="text-center">
+                    <Icon name="svg-spinners:tadpole" class="font-semibold text-4xl text-red-500" />
+                </p>
                 <ul v-for="(item, index) in users" :key="index">
                     <li>
                        {{ index+1 }}. {{ item.name }}
@@ -61,6 +83,30 @@
             </div>
         </div>
 
+        <!-- test call api with useFetch -->
+        <div class="mt-4 border-t pt-2">
+            <p class="uppercase font-bold font-oswald text-xl pb-2 text-sky-600">test use useFetch</p>
+            <div class="p-3 border-2 shadow-sm rounded" :class="pending ? 'border-violet-500' : ''">
+                <p v-if="pending" class="text-center">
+                    <Icon name="svg-spinners:clock" class="font-semibold text-4xl text-violet-500" />
+                </p>
+                <div v-else class="flex flex-wrap gap-5 w-full">
+                    <div v-for="product of (products as any[])" :key="product.id">
+                        <div class="p-2 bg-gray-700 text-gray-100 my-2 rounded w-96 flex gap-x-3 items-center justify-start">
+                            <p class="">
+                                <nuxt-img :src="product.image" alt="" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded h-48" />
+                            </p>
+                           <p class="text-sm">
+                                {{ product.title }}
+                           </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- test font family -->
         <div class="mt-4 border-t pt-2 flex flex-col gap-1">
             <h1 class="text-5xl font-semibold uppercase font-oswald text-rose-500">
                 test font oswald for text heading
@@ -93,6 +139,7 @@
         
         </div>
         
+        <!-- test headlessUI -->
         <div class="mt-4 border-t pt-2">
             <p class="uppercase font-bold mb-3 font-oswald text-xl pb-2 text-sky-600">Test Headless UI</p>
             <div class="flex gap-x-2 items-center">
@@ -133,8 +180,9 @@
 
         </div>
 
+        <!-- test nuxt image optimization -->
         <div class="mt-4 border-t pt-2">
-            <p class="uppercase font-bold font-oswald text-xl pb-2 text-sky-600">text nuxt image optimize</p>
+            <p class="uppercase font-bold font-oswald text-xl pb-2 text-sky-600">test nuxt image optimize</p>
             <div class="flex flex-wrap gap-3">
                 <nuxt-img src="/img/bg01.png" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded shadow-md md:h-48" />
                 <nuxt-img src="/img/bg02.png" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded shadow-md md:h-48" />
@@ -168,7 +216,11 @@
 import axios from 'axios';
 
 const value = ref()
+const name = ref()
+const time = ref()
 const users = ref()
+
+const { data: products, pending, error, refresh } = await useLazyFetch(() => 'https://fakestoreapi.com/products?limit=5')
 
 const enabled = ref(false)
 
@@ -181,6 +233,7 @@ function setIsOpen(value : any) {
 
 onMounted( async () => {
     await fetchUser()
+    // await fetchProduct()
 })
 
 const fetchUser = async () => {
@@ -196,6 +249,7 @@ const fetchUser = async () => {
         loadingIcon.value = false
     })
 }
+
 
 </script>
 

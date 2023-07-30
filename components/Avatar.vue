@@ -1,0 +1,20 @@
+<template>
+    <div class="bg-slate-300 w-14 h-14 flex justify-center items-center rounded-full hover:ring-2 hover:ring-sky-600 hover:ring-offset-2 transition ease-in-out duration-300">
+        <slot />
+    </div>
+</template>
+
+<script setup lang="ts">
+
+</script>
+
+<style lang="postcss" scoped>
+
+.square {
+    @apply rounded-md
+}
+.sm{
+    @apply w-12 h-12
+}
+
+</style>

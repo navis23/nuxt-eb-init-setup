@@ -1,7 +1,9 @@
 <template>
     <div class="px-4 lg:px-32 py-10">
         <h1 class="text-emerald-400 text-4xl font-bold uppercase font-oswald">Basic Example for EB CLI Template with nuxt 3</h1>
-        
+        <div class="bg-gray-700 p-3 mt-2 rounded">
+            <h3 class="text-xl uppercase text-slate-100 font-oswald">Background color is {{ bg_color }}</h3>
+        </div>
         <!-- test dependency nuxt icon -->
         <div class="mt-4">
             <p class="uppercase font-bold font-oswald text-xl pb-2 text-sky-600">test nuxt icon</p>
@@ -71,13 +73,13 @@
         <!-- test call api with axios -->
         <div class="mt-4 border-t pt-2">
             <p class="uppercase font-bold font-oswald text-xl pb-2 text-sky-600">test axios and fecth data</p>
-            <div class="p-3 border-2 shadow-sm rounded w-96" :class="loadingIcon ? 'border-red-500' : ''">
+            <div class="p-3 border rounded-md w-96 bg-white" :class="loadingIcon ? 'border-red-500' : ''">
                 <p v-if="loadingIcon" class="text-center">
                     <Icon name="svg-spinners:tadpole" class="font-semibold text-4xl text-red-500" />
                 </p>
                 <ul v-for="(item, index) in users" :key="index">
                     <li>
-                       {{ index+1 }}. {{ item.name }}
+                        {{ index+1 }}. {{ item.name }}
                     </li>
                 </ul>
             </div>
@@ -90,13 +92,13 @@
                 <p v-if="pending" class="text-center">
                     <Icon name="svg-spinners:clock" class="font-semibold text-4xl text-violet-500" />
                 </p>
-                <div v-else class="flex flex-wrap gap-5 w-full">
-                    <div v-for="product of (products as any[])" :key="product.id">
+                <div v-else class="grid grid-cols-12 w-full gap-6">
+                    <div v-for="product of (products as any[])" :key="product.id" class="col-span-12 md:col-span-6 lg:col-span-4">
                         <div class="p-2 bg-gray-700 text-gray-100 my-2 rounded w-96 flex gap-x-3 items-center justify-start">
-                            <p class="">
-                                <nuxt-img :src="product.image" alt="" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded h-48" />
+                            <p class=" w-2/5 ">
+                                <nuxt-img :src="product.image" alt="" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded h-48 " />
                             </p>
-                           <p class="text-sm">
+                           <p class=" w-3/5 text-sm">
                                 {{ product.title }}
                            </p>
                         </div>
@@ -172,10 +174,58 @@
                 </ClientOnly>
             </div>
             
-            <div class="py-4">
-                <button :class="isOpen ? 'bg-purple-400' : 'bg-emerald-400'" class="p-4" @click="setIsOpen(true)">
-                    tes Modal
-                </button>
+            <div class="py-4 flex flex-wrap gap-4">
+                <SButton @click="setIsOpen(true)">
+                    Tes Modal
+                </SButton>
+
+                <SButton class="warning" @click="setIsOpen(true)">
+                    Warning Button
+                </SButton>
+
+                <SButton class="danger" @click="setIsOpen(true)">
+                    Danger Button
+                </SButton>
+
+                <SButton class="muted" @click="setIsOpen(true)">
+                    Muted Button
+                </SButton>
+            </div>
+
+            <div class="py-4 flex flex-wrap gap-4">
+                <LButton @click="setIsOpen(true)">
+                    Tes Modal
+                </LButton>
+
+                <LButton class="warning" @click="setIsOpen(true)">
+                    Warning Button
+                </LButton>
+
+                <LButton class="danger" @click="setIsOpen(true)">
+                    Danger Button
+                </LButton>
+
+                <LButton class="muted" @click="setIsOpen(true)">
+                    Muted Button
+                </LButton>
+            </div>
+
+            <div class="py-4 flex flex-wrap gap-4">
+                <IButton @click="setIsOpen(true)">
+                    <Icon name="carbon:moon" />
+                </IButton>
+
+                <IButton class="warning" @click="setIsOpen(true)">
+                    <Icon name="carbon:moon" />
+                </IButton>
+
+                <IButton class="danger" @click="setIsOpen(true)">
+                    <Icon name="carbon:moon" />
+                </IButton>
+
+                <IButton class="muted" @click="setIsOpen(true)">
+                    <Icon name="carbon:moon" />
+                </IButton>
             </div>
 
         </div>
@@ -199,11 +249,11 @@
                 <!-- Full-screen container to center the panel -->
                 <div class="fixed inset-0 flex items-center justify-center p-4">
                 <!-- The actual dialog panel -->
-                <HeadlessDialogPanel class="w-full max-w-sm rounded bg-white">
+                <HeadlessDialogPanel class="w-full max-w-sm rounded bg-white p-4">
                     <HeadlessDialogTitle>Complete your order</HeadlessDialogTitle>
-                    <button class="bg-red-300 p-4" @click="setIsOpen(false)">
+                    <SButton class="danger" @click="setIsOpen(false)">
                         get outttt
-                    </button>
+                    </SButton>
                     <!-- ... -->
                 </HeadlessDialogPanel>
                 </div>
@@ -219,6 +269,7 @@ const value = ref()
 const name = ref()
 const time = ref()
 const users = ref()
+const bg_color = ref('slate-100')
 
 const { data: products, pending, error, refresh } = await useLazyFetch(() => 'https://fakestoreapi.com/products?limit=5')
 

@@ -103,7 +103,7 @@
                             <SmButton class="mono">
                                 <Icon name="carbon:moon" class="text-2xl" />
                                 <span>
-                                    Switch
+                                    Edit
                                 </span>
                             </SmButton>
                         </div>
@@ -189,11 +189,105 @@
             <div class="grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="relative w-full border bg-white transition-all duration-300 rounded-xl p-4">
                     <div class="mb-3 flex items-center gap-3">
-                        <div class="relative inline-flex shrink-0 items-center justify-center outline-none h-8 w-8 rounded-full bg-slate-400">
-
+                        <Avatar class="xs">
+                            <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                        </Avatar>
+                        <div class="leading-none">
+                            <h4 class="text-sm font-medium leading-tight">
+                                Navis Mbing
+                            </h4>
+                            <p class="text-xs text-gray-400">15 minutes ago</p>
+                        </div>
+                        <div class="ms-auto">
+                            <IButton class="mono sm">
+                                <Icon name="carbon:overflow-menu-horizontal" />
+                            </IButton>
                         </div>
                     </div>
+                    <div>
+                        <nuxt-img src="/img/card101.png" format="webp" loading="lazy" sizes="sm:100vw" class="object-cover h-64 w-full object-center rounded-lg"/>
+                    </div>
+                    <div class="my-4">
+                        <p class="leading-snug line-clamp-2">
+                            Percobaan car version 2 EB UI gaes lets go Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <SButton class="mono w-full">
+                            Mono Button
+                        </SButton>
+                        <SButton class="dark w-full">
+                            Dark Button
+                        </SButton>
+                    </div>
                 </div>
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-xl p-4">
+                    <div class="mb-3 flex items-center gap-3">
+                        <Avatar class="xs">
+                            <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                        </Avatar>
+                        <div class="leading-none">
+                            <h4 class="text-sm font-medium leading-tight">
+                                Navis Mbing
+                            </h4>
+                            <p class="text-xs text-gray-400">15 minutes ago</p>
+                        </div>
+                        <div class="ms-auto">
+                            <IButton class="mono sm">
+                                <Icon name="carbon:overflow-menu-horizontal" />
+                            </IButton>
+                        </div>
+                    </div>
+                    <div>
+                        <nuxt-img src="/img/bg01.png" format="webp" loading="lazy" sizes="sm:100vw" class="object-cover h-64 w-full object-center rounded-lg"/>
+                    </div>
+                    <div class="my-4">
+                        <p class="leading-snug line-clamp-2">
+                            Percobaan car version 2 EB UI gaes lets go Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <SButton class="w-full">
+                            Full Button
+                        </SButton>
+                    </div>
+                </div>
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-xl p-4">
+                    <div class="mb-3 flex items-center gap-3">
+                        <Avatar class="xs">
+                            <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                        </Avatar>
+                        <div class="leading-none">
+                            <h4 class="text-sm font-medium leading-tight">
+                                Navis Mbing
+                            </h4>
+                            <p class="text-xs text-gray-400">15 minutes ago</p>
+                        </div>
+                        <div class="ms-auto">
+                            <IButton class="mono sm">
+                                <Icon name="carbon:overflow-menu-horizontal" />
+                            </IButton>
+                        </div>
+                    </div>
+                    <div>
+                        <nuxt-img src="/img/card102.png" format="webp" loading="lazy" sizes="sm:100vw" class="object-cover h-64 w-full object-center rounded-lg"/>
+                    </div>
+                    <div class="my-4">
+                        <p class="leading-snug line-clamp-2">
+                            Percobaan car version 2 EB UI gaes lets go Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <SButton class="mono w-full">
+                            Mono Button
+                        </SButton>
+                        <SButton class="dark w-full">
+                            Dark Button
+                        </SButton>
+                    </div>
+                </div>
+                
+                
             </div>
         </div>
     </div>

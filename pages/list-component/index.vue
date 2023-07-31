@@ -239,6 +239,59 @@
                     </IButton>
                 </div>
 
+                <!-- mini xs icon button -->
+                <div class="py-4 flex flex-wrap gap-4">
+                    <!-- circle mini xs icon button -->
+                    <IButton class="xs">
+                        <Icon name="carbon:view" />
+                    </IButton>
+    
+                    <IButton class="warning xs">
+                        <Icon name="carbon:edit" />
+                    </IButton>
+    
+                    <IButton class="danger xs">
+                        <Icon name="carbon:trash-can" />
+                    </IButton>
+    
+                    <IButton class="muted xs">
+                        <Icon name="carbon:close" />
+                    </IButton>
+
+                    <IButton class="mono xs">
+                        <Icon name="carbon:moon" />
+                    </IButton>
+
+                    <IButton class="dark xs">
+                        <Icon name="carbon:sun" />
+                    </IButton>
+
+                    <!-- square mini xs icon button -->
+                    <IButton class="square xs">
+                        <Icon name="carbon:view" />
+                    </IButton>
+    
+                    <IButton class="warning square xs">
+                        <Icon name="carbon:edit" />
+                    </IButton>
+    
+                    <IButton class="danger square xs">
+                        <Icon name="carbon:trash-can" />
+                    </IButton>
+    
+                    <IButton class="muted square xs">
+                        <Icon name="carbon:close" />
+                    </IButton>
+
+                    <IButton class="mono square xs">
+                        <Icon name="carbon:moon" />
+                    </IButton>
+
+                    <IButton class="dark square xs">
+                        <Icon name="carbon:sun" />
+                    </IButton>
+                </div>
+
                 <!-- icon button with tooltips -->
                 <p class="mt-3">#Icon Button combine with sticky tooltips, write component ItButton </p>
                 <div class="py-4 flex flex-wrap gap-4">
@@ -438,7 +491,7 @@
 
                 <!-- mini avatar -->
                 <div class="py-4 flex flex-wrap gap-4">
-                    <!-- circle mini avatar -->
+                    <!-- circle mini xs avatar -->
                     <Avatar class="xs">
                         <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
                     </Avatar>
@@ -451,7 +504,7 @@
                     <Avatar class="xs">
                         <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
                     </Avatar>
-                    <!-- square sm avatar -->
+                    <!-- square mini xs avatar -->
                     <Avatar class="xs square">
                         <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
                     </Avatar>

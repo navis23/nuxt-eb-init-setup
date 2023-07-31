@@ -22,7 +22,7 @@
     @apply rounded-md
 }
 .mono {
-    @apply bg-slate-50 text-gray-800 border hover:bg-white
+    @apply bg-slate-50 text-gray-500 border hover:bg-white hover:text-gray-800
 }
 .dark {
     @apply text-slate-50 bg-gray-800 border hover:bg-gray-700

@@ -25,6 +25,8 @@
                 </nuxt-link>
             </div>
         </nav>
+
+        <!-- begin card ver 1 -->
         <div class="pb-4">
             <h2 class="text-3xl font-oswald font-bold mb-3">Card Ver. 1</h2>
 
@@ -49,12 +51,15 @@
                     </div>
                     <div class="mt-auto flex items-center gap-2">
                         <div class="relative inline-flex shrink-0 items-center justify-center outline-none h-8 w-8 rounded-full bg-slate-500">
-                            <div class="flex h-full w-full items-center justify-center overflow-hidden text-center transition-all duration-300 rounded-full">
+                            <!-- <div class="flex h-full w-full items-center justify-center overflow-hidden text-center transition-all duration-300 rounded-full">
                                 <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="max-h-full max-w-full object-cover object-center shadow-sm h-8 w-8" />
-                            </div>
+                            </div> -->
+                            <Avatar class="xs">
+                                <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                            </Avatar>
                         </div>
                         <div class="leading-none">
-                            <h4 class="text-sm font-medium leading-tight">
+                            <h4 class="text-xs font-medium leading-tight">
                                 Navis Mbing
                             </h4>
                             <p class="text-xs text-gray-400">15 minutes ago</p>
@@ -171,6 +176,21 @@
                                     Switch
                                 </span>
                             </SmButton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- begin card ver 2 -->
+        <div class="pb-4">
+            <h2 class="text-3xl font-oswald font-bold mb-3">Card Ver. 2</h2>
+            <!-- card container -->
+            <div class="grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-xl p-4">
+                    <div class="mb-3 flex items-center gap-3">
+                        <div class="relative inline-flex shrink-0 items-center justify-center outline-none h-8 w-8 rounded-full bg-slate-400">
+
                         </div>
                     </div>
                 </div>

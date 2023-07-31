@@ -435,6 +435,36 @@
                         <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-12 w-12 rounded-md" />
                     </Avatar>
                 </div>
+
+                <!-- mini avatar -->
+                <div class="py-4 flex flex-wrap gap-4">
+                    <!-- circle mini avatar -->
+                    <Avatar class="xs">
+                        <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                    </Avatar>
+                    <Avatar class="xs">
+                        <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                    </Avatar>
+                    <Avatar class="xs">
+                        <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                    </Avatar>
+                    <Avatar class="xs">
+                        <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                    </Avatar>
+                    <!-- square sm avatar -->
+                    <Avatar class="xs square">
+                        <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                    </Avatar>
+                    <Avatar class="xs square">
+                        <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                    </Avatar>
+                    <Avatar class="xs square">
+                        <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                    </Avatar>
+                    <Avatar class="xs square">
+                        <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                    </Avatar>
+                </div>
             </div>
         </div>
     </div>

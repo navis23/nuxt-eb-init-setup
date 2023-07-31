@@ -1,6 +1,8 @@
-# Nuxt 3 Minimal Starter
+# Enterbiner Initial Setup for Nuxt 3
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is use for starting setup for enterbiner to start an fresh project, with components and basic dependencies included inside.
+
+For Nuxt 3 look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 

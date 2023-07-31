@@ -1,5 +1,29 @@
 <template>
     <div class="px-4 lg:px-32 py-10">
+        <nav class="bg-gray-800 text-white h-30 flex justify-end items-center w-full p-4 mb-5 rounded-md">
+            <div class="flex justify-between items-center gap-4 ">
+                <nuxt-link to="/">
+                    <Badge class="mono">
+                        Home
+                    </Badge>
+                </nuxt-link>
+                <nuxt-link to="/list-component">
+                    <Badge class="mono">
+                        small component
+                    </Badge>
+                </nuxt-link>
+                <nuxt-link to="/list-component/cards">
+                    <Badge class="mono">
+                        card
+                    </Badge>
+                </nuxt-link>
+                <nuxt-link to="/">
+                    <Badge class="mono">
+                        table
+                    </Badge>
+                </nuxt-link>
+            </div>
+        </nav>
         <h1 class="text-emerald-400 text-4xl font-bold uppercase font-oswald">Basic Example for EB CLI Template with nuxt 3</h1>
         <div class="bg-gray-700 p-3 mt-2 rounded">
             <h3 class="text-xl uppercase text-slate-100 font-oswald">Background color is {{ bg_color }}</h3>
@@ -172,6 +196,43 @@
                         </span>
                     </HeadlessTransitionRoot>
                 </ClientOnly>
+            </div>
+
+            <div class="py-4">
+                <HeadlessPopover class="relative">
+                    <HeadlessPopoverButton>
+                        <SButton>
+                            Test Popover
+                        </SButton>
+                    </HeadlessPopoverButton>
+
+                    <HeadlessPopoverPanel class="absolute z-10 bg-white rounded-md p-4 mt-3">
+                        <div class="grid grid-cols-2 gap-6 pb-4">
+                            <nuxt-link to="/">
+                                <SButton class="dark">
+                                    Home
+                                </SButton>
+                            </nuxt-link>
+                            <nuxt-link to="/list-component">
+                                <SButton class="dark">
+                                    Components
+                                </SButton>
+                            </nuxt-link>
+                            <nuxt-link to="/list-component/cards">
+                                <SButton class="dark">
+                                    Cards
+                                </SButton>
+                            </nuxt-link>
+                            <nuxt-link to="/">
+                                <SButton class="dark">
+                                    Table
+                                </SButton>
+                            </nuxt-link>
+                        </div>
+
+                        <nuxt-img src="/img/bg01.png" format="webp" loading="lazy" sizes="sm:100vw" fit="cover" class="rounded-md h-48" />
+                    </HeadlessPopoverPanel>
+                </HeadlessPopover>
             </div>
             
             <div class="py-4 flex flex-wrap gap-4">

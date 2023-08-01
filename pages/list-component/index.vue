@@ -25,290 +25,344 @@
                 </nuxt-link>
             </div>
         </nav>
+
         <!-- group of button -->
-        <div class="pb-8">
+        <div class="pb-10">
             <h2 class="text-sky-600 text-3xl font-oswald font-bold mb-3">Button</h2>
             <div class="border p-4 rounded-xl bg-white">
                 <!-- begin standard button -->
-                <p class="mt-3">#Default standard Button, write component SButton </p>
+                <p class="mt-3">#Default standard Button, write component ButtonBase </p>
                 <div class="py-4 flex flex-wrap gap-4">
-                    <SButton>
+                    <ButtonBase>
                         Primary Button
-                    </SButton>
+                    </ButtonBase>
     
-                    <SButton class="warning">
+                    <ButtonBase class="warning">
                         Warning Button
-                    </SButton>
+                    </ButtonBase>
     
-                    <SButton class="danger">
+                    <ButtonBase class="danger">
                         Danger Button
-                    </SButton>
+                    </ButtonBase>
     
-                    <SButton class="muted">
+                    <ButtonBase class="muted">
                         Muted Button
-                    </SButton>
+                    </ButtonBase>
 
-                    <SButton class="mono">
+                    <ButtonBase class="mono">
                         Mono Button
-                    </SButton>
+                    </ButtonBase>
 
-                    <SButton class="dark">
+                    <ButtonBase class="dark">
                         Dark Button
-                    </SButton>
+                    </ButtonBase>
                 </div>
 
                 <!-- begin expanded button -->
-                <p class="mt-3">#Expanded Button to full with when viewport mobile, write component LButton </p>
+                <p class="mt-3">#Expanded Button to full with when viewport mobile, write component ButtonBaseExpanded </p>
                 <div class="py-4 flex flex-wrap gap-4">
-                    <LButton>
+                    <ButtonBaseExpanded>
                         Primary Button
-                    </LButton>
+                    </ButtonBaseExpanded>
     
-                    <LButton class="warning">
+                    <ButtonBaseExpanded class="warning">
                         Warning Button
-                    </LButton>
+                    </ButtonBaseExpanded>
     
-                    <LButton class="danger">
+                    <ButtonBaseExpanded class="danger">
                         Danger Button
-                    </LButton>
+                    </ButtonBaseExpanded>
     
-                    <LButton class="muted">
+                    <ButtonBaseExpanded class="muted">
                         Muted Button
-                    </LButton>
+                    </ButtonBaseExpanded>
 
-                    <LButton class="mono">
+                    <ButtonBaseExpanded class="mono">
                         Mono Button
-                    </LButton>
+                    </ButtonBaseExpanded>
 
-                    <LButton class="dark">
+                    <ButtonBaseExpanded class="dark">
                         Dark Button
-                    </LButton>
+                    </ButtonBaseExpanded>
                 </div>
 
                 <!-- begin small button with icon -->
-                <p class="mt-3">#Small Button with one sentence combine with icon, write component SmButton </p>
+                <p class="mt-3">#Small Button with one sentence combine with icon, write component ButtonBaseSmall </p>
                 <div class="py-4 flex flex-wrap gap-4">
-                    <SmButton>
+                    <ButtonBaseSmall>
                         <Icon name="carbon:view" class="text-2xl" />
                         <span>
                             View
                         </span>
-                    </SmButton>
+                    </ButtonBaseSmall>
     
-                    <SmButton class="warning">
+                    <ButtonBaseSmall class="warning">
                         <Icon name="carbon:edit" class="text-2xl" />
                         <span>
                             Edit
                         </span>
-                    </SmButton>
+                    </ButtonBaseSmall>
     
-                    <SmButton class="danger">
+                    <ButtonBaseSmall class="danger">
                         <Icon name="carbon:trash-can" class="text-2xl" />
                         <span>
                             Delete
                         </span>
-                    </SmButton>
+                    </ButtonBaseSmall>
     
-                    <SmButton class="muted">
+                    <ButtonBaseSmall class="muted">
                         <Icon name="carbon:close" class="text-2xl" />
                         <span>
                             Close
                         </span>
-                    </SmButton>
+                    </ButtonBaseSmall>
 
-                    <SmButton class="mono">
+                    <ButtonBaseSmall class="mono">
                         <Icon name="carbon:moon" class="text-2xl" />
                         <span>
                             Switch
                         </span>
-                    </SmButton>
+                    </ButtonBaseSmall>
 
-                    <SmButton class="dark">
+                    <ButtonBaseSmall class="dark">
                         <Icon name="carbon:sun" class="text-2xl" />
                         <span>
                             Bright
                         </span>
-                    </SmButton>
+                    </ButtonBaseSmall>
                 </div>
 
                 <!-- begin icon button -->
-                <p class="mt-3">#Icon circle & square Button combine with various icon in nuxt icon, write component IButton </p>
+                <p class="mt-3">#Icon circle & square Button combine with various icon in nuxt icon, write component ButtonIcon </p>
                 <!-- standard icon button -->
                 <div class="py-4 flex flex-wrap gap-4">
                     <!-- circle icon button -->
-                    <IButton>
+                    <ButtonIcon>
                         <Icon name="carbon:view" />
-                    </IButton>
+                    </ButtonIcon>
     
-                    <IButton class="warning">
+                    <ButtonIcon class="warning">
                         <Icon name="carbon:edit" />
-                    </IButton>
+                    </ButtonIcon>
     
-                    <IButton class="danger">
+                    <ButtonIcon class="danger">
                         <Icon name="carbon:trash-can" />
-                    </IButton>
+                    </ButtonIcon>
     
-                    <IButton class="muted">
+                    <ButtonIcon class="muted">
                         <Icon name="carbon:close" />
-                    </IButton>
+                    </ButtonIcon>
 
-                    <IButton class="mono">
+                    <ButtonIcon class="mono">
                         <Icon name="carbon:moon" />
-                    </IButton>
+                    </ButtonIcon>
 
-                    <IButton class="dark">
+                    <ButtonIcon class="dark">
                         <Icon name="carbon:sun" />
-                    </IButton>
+                    </ButtonIcon>
 
                     <!-- square icon button -->
-                    <IButton class="square">
+                    <ButtonIcon class="square">
                         <Icon name="carbon:view" />
-                    </IButton>
+                    </ButtonIcon>
     
-                    <IButton class="warning square">
+                    <ButtonIcon class="warning square">
                         <Icon name="carbon:edit" />
-                    </IButton>
+                    </ButtonIcon>
     
-                    <IButton class="danger square">
+                    <ButtonIcon class="danger square">
                         <Icon name="carbon:trash-can" />
-                    </IButton>
+                    </ButtonIcon>
     
-                    <IButton class="muted square">
+                    <ButtonIcon class="muted square">
                         <Icon name="carbon:close" />
-                    </IButton>
+                    </ButtonIcon>
 
-                    <IButton class="mono square">
+                    <ButtonIcon class="mono square">
                         <Icon name="carbon:moon" />
-                    </IButton>
+                    </ButtonIcon>
 
-                    <IButton class="dark square">
+                    <ButtonIcon class="dark square">
                         <Icon name="carbon:sun" />
-                    </IButton>
+                    </ButtonIcon>
                 </div>
 
                 <!-- small icon button -->
                 <div class="py-4 flex flex-wrap gap-4">
                     <!-- circle small icon button -->
-                    <IButton class="sm">
+                    <ButtonIcon class="sm">
                         <Icon name="carbon:view" />
-                    </IButton>
+                    </ButtonIcon>
     
-                    <IButton class="warning sm">
+                    <ButtonIcon class="warning sm">
                         <Icon name="carbon:edit" />
-                    </IButton>
+                    </ButtonIcon>
     
-                    <IButton class="danger sm">
+                    <ButtonIcon class="danger sm">
                         <Icon name="carbon:trash-can" />
-                    </IButton>
+                    </ButtonIcon>
     
-                    <IButton class="muted sm">
+                    <ButtonIcon class="muted sm">
                         <Icon name="carbon:close" />
-                    </IButton>
+                    </ButtonIcon>
 
-                    <IButton class="mono sm">
+                    <ButtonIcon class="mono sm">
                         <Icon name="carbon:moon" />
-                    </IButton>
+                    </ButtonIcon>
 
-                    <IButton class="dark sm">
+                    <ButtonIcon class="dark sm">
                         <Icon name="carbon:sun" />
-                    </IButton>
+                    </ButtonIcon>
 
                     <!-- square small icon button -->
-                    <IButton class="square sm">
+                    <ButtonIcon class="square sm">
                         <Icon name="carbon:view" />
-                    </IButton>
+                    </ButtonIcon>
     
-                    <IButton class="warning square sm">
+                    <ButtonIcon class="warning square sm">
                         <Icon name="carbon:edit" />
-                    </IButton>
+                    </ButtonIcon>
     
-                    <IButton class="danger square sm">
+                    <ButtonIcon class="danger square sm">
                         <Icon name="carbon:trash-can" />
-                    </IButton>
+                    </ButtonIcon>
     
-                    <IButton class="muted square sm">
+                    <ButtonIcon class="muted square sm">
                         <Icon name="carbon:close" />
-                    </IButton>
+                    </ButtonIcon>
 
-                    <IButton class="mono square sm">
+                    <ButtonIcon class="mono square sm">
                         <Icon name="carbon:moon" />
-                    </IButton>
+                    </ButtonIcon>
 
-                    <IButton class="dark square sm">
+                    <ButtonIcon class="dark square sm">
                         <Icon name="carbon:sun" />
-                    </IButton>
+                    </ButtonIcon>
+                </div>
+
+                <!-- mini xs icon button -->
+                <div class="py-4 flex flex-wrap gap-4">
+                    <!-- circle mini xs icon button -->
+                    <ButtonIcon class="xs">
+                        <Icon name="carbon:view" />
+                    </ButtonIcon>
+    
+                    <ButtonIcon class="warning xs">
+                        <Icon name="carbon:edit" />
+                    </ButtonIcon>
+    
+                    <ButtonIcon class="danger xs">
+                        <Icon name="carbon:trash-can" />
+                    </ButtonIcon>
+    
+                    <ButtonIcon class="muted xs">
+                        <Icon name="carbon:close" />
+                    </ButtonIcon>
+
+                    <ButtonIcon class="mono xs">
+                        <Icon name="carbon:moon" />
+                    </ButtonIcon>
+
+                    <ButtonIcon class="dark xs">
+                        <Icon name="carbon:sun" />
+                    </ButtonIcon>
+
+                    <!-- square mini xs icon button -->
+                    <ButtonIcon class="square xs">
+                        <Icon name="carbon:view" />
+                    </ButtonIcon>
+    
+                    <ButtonIcon class="warning square xs">
+                        <Icon name="carbon:edit" />
+                    </ButtonIcon>
+    
+                    <ButtonIcon class="danger square xs">
+                        <Icon name="carbon:trash-can" />
+                    </ButtonIcon>
+    
+                    <ButtonIcon class="muted square xs">
+                        <Icon name="carbon:close" />
+                    </ButtonIcon>
+
+                    <ButtonIcon class="mono square xs">
+                        <Icon name="carbon:moon" />
+                    </ButtonIcon>
+
+                    <ButtonIcon class="dark square xs">
+                        <Icon name="carbon:sun" />
+                    </ButtonIcon>
                 </div>
 
                 <!-- icon button with tooltips -->
-                <p class="mt-3">#Icon Button combine with sticky tooltips, write component ItButton </p>
+                <p class="mt-3">#Icon Button combine with sticky tooltips, write component ButtonIconTooltip </p>
                 <div class="py-4 flex flex-wrap gap-4">
                     <!-- circle icon tooltips button -->
-                    <ItButton>
+                    <ButtonIconTooltip>
                         <Icon name="carbon:view" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Lihat Data</span>
-                    </ItButton>
+                    </ButtonIconTooltip>
     
-                    <ItButton class="warning">
+                    <ButtonIconTooltip class="warning">
                         <Icon name="carbon:edit" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Edit Data</span>
-                    </ItButton>
+                    </ButtonIconTooltip>
     
-                    <ItButton class="danger">
+                    <ButtonIconTooltip class="danger">
                         <Icon name="carbon:trash-can" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Hapus Data</span>
-                    </ItButton>
+                    </ButtonIconTooltip>
     
-                    <ItButton class="muted">
+                    <ButtonIconTooltip class="muted">
                         <Icon name="carbon:close" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Keluar</span>
-                    </ItButton>
+                    </ButtonIconTooltip>
 
-                    <ItButton class="mono">
+                    <ButtonIconTooltip class="mono">
                         <Icon name="carbon:moon" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Darkness</span>
-                    </ItButton>
+                    </ButtonIconTooltip>
 
-                    <ItButton class="dark">
+                    <ButtonIconTooltip class="dark">
                         <Icon name="carbon:sun" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Brightness</span>
-                    </ItButton>
+                    </ButtonIconTooltip>
 
                     <!-- square icon tooltips button -->
-                    <ItButton class="square">
+                    <ButtonIconTooltip class="square">
                         <Icon name="carbon:view" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Lihat Data</span>
-                    </ItButton>
+                    </ButtonIconTooltip>
     
-                    <ItButton class="warning square">
+                    <ButtonIconTooltip class="warning square">
                         <Icon name="carbon:edit" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Edit Data</span>
-                    </ItButton>
+                    </ButtonIconTooltip>
     
-                    <ItButton class="danger square">
+                    <ButtonIconTooltip class="danger square">
                         <Icon name="carbon:trash-can" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Hapus Data</span>
-                    </ItButton>
+                    </ButtonIconTooltip>
     
-                    <ItButton class="muted square">
+                    <ButtonIconTooltip class="muted square">
                         <Icon name="carbon:close" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Keluar</span>
-                    </ItButton>
+                    </ButtonIconTooltip>
 
-                    <ItButton class="mono square">
+                    <ButtonIconTooltip class="mono square">
                         <Icon name="carbon:moon" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Darkness</span>
-                    </ItButton>
+                    </ButtonIconTooltip>
 
-                    <ItButton class="dark square">
+                    <ButtonIconTooltip class="dark square">
                         <Icon name="carbon:sun" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Brightness</span>
-                    </ItButton>
+                    </ButtonIconTooltip>
                 </div>
             </div>
         </div>
 
         <!-- group of badge & avatar -->
-        <div class="pb-8">
+        <div class="pb-10">
             <h2 class="text-sky-600 text-3xl font-oswald font-bold mb-3">Badge & Avatar</h2>
             <div class="border p-4 rounded-xl bg-white">
                 <!-- begin badge -->
@@ -433,6 +487,36 @@
                     </Avatar>
                     <Avatar class="sm square">
                         <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-12 w-12 rounded-md" />
+                    </Avatar>
+                </div>
+
+                <!-- mini avatar -->
+                <div class="py-4 flex flex-wrap gap-4">
+                    <!-- circle mini xs avatar -->
+                    <Avatar class="xs">
+                        <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                    </Avatar>
+                    <Avatar class="xs">
+                        <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                    </Avatar>
+                    <Avatar class="xs">
+                        <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                    </Avatar>
+                    <Avatar class="xs">
+                        <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                    </Avatar>
+                    <!-- square mini xs avatar -->
+                    <Avatar class="xs square">
+                        <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                    </Avatar>
+                    <Avatar class="xs square">
+                        <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                    </Avatar>
+                    <Avatar class="xs square">
+                        <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                    </Avatar>
+                    <Avatar class="xs square">
+                        <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
                     </Avatar>
                 </div>
             </div>

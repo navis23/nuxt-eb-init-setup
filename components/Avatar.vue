@@ -13,8 +13,14 @@
 .square {
     @apply rounded-md
 }
+
+.lg{
+    @apply w-20 h-20
+}
 .sm{
     @apply w-12 h-12
 }
-
+.xs{
+    @apply w-8 h-8
+}
 </style>

@@ -236,57 +236,57 @@
             </div>
             
             <div class="py-4 flex flex-wrap gap-4">
-                <SButton @click="setIsOpen(true)">
+                <ButtonBase @click="setIsOpen(true)">
                     Tes Modal
-                </SButton>
+                </ButtonBase>
 
-                <SButton class="warning" @click="setIsOpen(true)">
+                <ButtonBase class="warning" @click="setIsOpen(true)">
                     Warning Button
-                </SButton>
+                </ButtonBase>
 
-                <SButton class="danger" @click="setIsOpen(true)">
+                <ButtonBase class="danger" @click="setIsOpen(true)">
                     Danger Button
-                </SButton>
+                </ButtonBase>
 
-                <SButton class="muted" @click="setIsOpen(true)">
+                <ButtonBase class="muted" @click="setIsOpen(true)">
                     Muted Button
-                </SButton>
+                </ButtonBase>
             </div>
 
             <div class="py-4 flex flex-wrap gap-4">
-                <LButton @click="setIsOpen(true)">
+                <ButtonBaseExpanded @click="setIsOpen(true)">
                     Tes Modal
-                </LButton>
+                </ButtonBaseExpanded>
 
-                <LButton class="warning" @click="setIsOpen(true)">
+                <ButtonBaseExpanded class="warning" @click="setIsOpen(true)">
                     Warning Button
-                </LButton>
+                </ButtonBaseExpanded>
 
-                <LButton class="danger" @click="setIsOpen(true)">
+                <ButtonBaseExpanded class="danger" @click="setIsOpen(true)">
                     Danger Button
-                </LButton>
+                </ButtonBaseExpanded>
 
-                <LButton class="muted" @click="setIsOpen(true)">
+                <ButtonBaseExpanded class="muted" @click="setIsOpen(true)">
                     Muted Button
-                </LButton>
+                </ButtonBaseExpanded>
             </div>
 
             <div class="py-4 flex flex-wrap gap-4">
-                <IButton @click="setIsOpen(true)">
+                <ButtonIcon @click="setIsOpen(true)">
                     <Icon name="carbon:moon" />
-                </IButton>
+                </ButtonIcon>
 
-                <IButton class="warning" @click="setIsOpen(true)">
+                <ButtonIcon class="warning" @click="setIsOpen(true)">
                     <Icon name="carbon:moon" />
-                </IButton>
+                </ButtonIcon>
 
-                <IButton class="danger" @click="setIsOpen(true)">
+                <ButtonIcon class="danger" @click="setIsOpen(true)">
                     <Icon name="carbon:moon" />
-                </IButton>
+                </ButtonIcon>
 
-                <IButton class="muted" @click="setIsOpen(true)">
+                <ButtonIcon class="muted" @click="setIsOpen(true)">
                     <Icon name="carbon:moon" />
-                </IButton>
+                </ButtonIcon>
             </div>
 
         </div>
@@ -312,9 +312,9 @@
                 <!-- The actual dialog panel -->
                 <HeadlessDialogPanel class="w-full max-w-sm rounded bg-white p-4">
                     <HeadlessDialogTitle>Complete your order</HeadlessDialogTitle>
-                    <SButton class="danger" @click="setIsOpen(false)">
+                    <ButtonBase class="danger" @click="setIsOpen(false)">
                         get outttt
-                    </SButton>
+                    </ButtonBase>
                     <!-- ... -->
                 </HeadlessDialogPanel>
                 </div>

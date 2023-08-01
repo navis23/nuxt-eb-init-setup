@@ -25,7 +25,9 @@
                 </nuxt-link>
             </div>
         </nav>
-        <div class="pb-4">
+
+        <!-- begin card ver 1 -->
+        <div class="pb-10">
             <h2 class="text-3xl font-oswald font-bold mb-3">Card Ver. 1</h2>
 
             <!-- card container -->
@@ -49,23 +51,26 @@
                     </div>
                     <div class="mt-auto flex items-center gap-2">
                         <div class="relative inline-flex shrink-0 items-center justify-center outline-none h-8 w-8 rounded-full bg-slate-500">
-                            <div class="flex h-full w-full items-center justify-center overflow-hidden text-center transition-all duration-300 rounded-full">
+                            <!-- <div class="flex h-full w-full items-center justify-center overflow-hidden text-center transition-all duration-300 rounded-full">
                                 <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="max-h-full max-w-full object-cover object-center shadow-sm h-8 w-8" />
-                            </div>
+                            </div> -->
+                            <Avatar class="xs">
+                                <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                            </Avatar>
                         </div>
                         <div class="leading-none">
-                            <h4 class="text-sm font-medium leading-tight">
+                            <h4 class="text-xs font-medium leading-tight">
                                 Navis Mbing
                             </h4>
                             <p class="text-xs text-gray-400">15 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <SmButton class="mono">
+                            <ButtonBaseSmall class="mono">
                                 <Icon name="carbon:moon" class="text-2xl" />
                                 <span>
                                     Switch
                                 </span>
-                            </SmButton>
+                            </ButtonBaseSmall>
                         </div>
                     </div>
                 </div>
@@ -95,12 +100,12 @@
                             <p class="text-xs text-gray-400">10 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <SmButton class="mono">
+                            <ButtonBaseSmall class="mono">
                                 <Icon name="carbon:moon" class="text-2xl" />
                                 <span>
-                                    Switch
+                                    Edit
                                 </span>
-                            </SmButton>
+                            </ButtonBaseSmall>
                         </div>
                     </div>
                 </div>
@@ -130,12 +135,12 @@
                             <p class="text-xs text-gray-400">44 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <SmButton class="mono">
+                            <ButtonBaseSmall class="mono">
                                 <Icon name="carbon:moon" class="text-2xl" />
                                 <span>
                                     Switch
                                 </span>
-                            </SmButton>
+                            </ButtonBaseSmall>
                         </div>
                     </div>
                 </div>
@@ -165,15 +170,396 @@
                             <p class="text-xs text-gray-400">1 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <SmButton class="mono">
+                            <ButtonBaseSmall class="mono">
                                 <Icon name="carbon:moon" class="text-2xl" />
                                 <span>
                                     Switch
                                 </span>
-                            </SmButton>
+                            </ButtonBaseSmall>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- begin card ver 2 -->
+        <div class="pb-10">
+            <h2 class="text-3xl font-oswald font-bold mb-3">Card Ver. 2</h2>
+            <!-- card container -->
+            <div class="grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-xl p-4">
+                    <div class="mb-3 flex items-center gap-3">
+                        <Avatar class="xs">
+                            <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                        </Avatar>
+                        <div class="leading-none">
+                            <h4 class="text-sm font-medium leading-tight">
+                                Navis Mbing
+                            </h4>
+                            <p class="text-xs text-gray-400">15 minutes ago</p>
+                        </div>
+                        <div class="ms-auto">
+                            <ButtonIcon class="mono sm">
+                                <Icon name="carbon:overflow-menu-horizontal" />
+                            </ButtonIcon>
+                        </div>
+                    </div>
+                    <div>
+                        <nuxt-img src="/img/card101.png" format="webp" loading="lazy" sizes="sm:100vw" class="object-cover h-64 w-full object-center rounded-lg"/>
+                    </div>
+                    <div class="my-4">
+                        <p class="leading-snug line-clamp-2">
+                            Percobaan car version 2 EB UI gaes lets go Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <ButtonBase class="mono w-full">
+                            Mono Button
+                        </ButtonBase>
+                        <ButtonBase class="dark w-full">
+                            Dark Button
+                        </ButtonBase>
+                    </div>
+                </div>
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-xl p-4">
+                    <div class="mb-3 flex items-center gap-3">
+                        <Avatar class="xs">
+                            <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                        </Avatar>
+                        <div class="leading-none">
+                            <h4 class="text-sm font-medium leading-tight">
+                                Navis Mbing
+                            </h4>
+                            <p class="text-xs text-gray-400">15 minutes ago</p>
+                        </div>
+                        <div class="ms-auto">
+                            <ButtonIcon class="mono sm">
+                                <Icon name="carbon:overflow-menu-horizontal" />
+                            </ButtonIcon>
+                        </div>
+                    </div>
+                    <div>
+                        <nuxt-img src="/img/bg01.png" format="webp" loading="lazy" sizes="sm:100vw" class="object-cover h-64 w-full object-center rounded-lg"/>
+                    </div>
+                    <div class="my-4">
+                        <p class="leading-snug line-clamp-2">
+                            Percobaan car version 2 EB UI gaes lets go Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <ButtonBase class="w-full">
+                            Full Button
+                        </ButtonBase>
+                    </div>
+                </div>
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-xl p-4">
+                    <div class="mb-3 flex items-center gap-3">
+                        <Avatar class="xs">
+                            <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-full" />
+                        </Avatar>
+                        <div class="leading-none">
+                            <h4 class="text-sm font-medium leading-tight">
+                                Navis Mbing
+                            </h4>
+                            <p class="text-xs text-gray-400">15 minutes ago</p>
+                        </div>
+                        <div class="ms-auto">
+                            <ButtonIcon class="mono sm">
+                                <Icon name="carbon:overflow-menu-horizontal" />
+                            </ButtonIcon>
+                        </div>
+                    </div>
+                    <div>
+                        <nuxt-img src="/img/card102.png" format="webp" loading="lazy" sizes="sm:100vw" class="object-cover h-64 w-full object-center rounded-lg"/>
+                    </div>
+                    <div class="my-4">
+                        <p class="leading-snug line-clamp-2">
+                            Percobaan car version 2 EB UI gaes lets go Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <ButtonBase class="mono w-full">
+                            Mono Button
+                        </ButtonBase>
+                        <ButtonBase class="dark w-full">
+                            Dark Button
+                        </ButtonBase>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <!-- begin card ver 3 -->
+        <div class="pb-10">
+            <h2 class="text-3xl font-oswald font-bold mb-3">Card Ver. 3</h2>
+            <!-- card container -->
+            <div class="grid w-full gap-4 lg:grid-cols-2">
+
+                <!-- begin card v3 -->
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-md">
+                    <!-- top card v3 -->
+                    <div class="flex flex-col items-center border-b p-6 sm:flex-row">
+                        <div class="flex flex-col items-center gap-3 sm:flex-row">
+                            <Avatar class="lg">
+                                <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-full" />
+                            </Avatar>
+                            <div class="text-center sm:text-left">
+                                <h4 class="font-medium leading-tight">
+                                    Mbingkamp Syy
+                                </h4>
+                                <p class="text-sm text-gray-400">
+                                    Software Engineer
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex items-center gap-3 sm:mt-0 sm:ms-auto">
+                            <ButtonIcon class="mono xs shadow-md">
+                                <Icon name="carbon:logo-instagram" />
+                            </ButtonIcon>
+                            <ButtonIcon class="mono xs shadow-md">
+                                <Icon name="carbon:logo-twitter" />
+                            </ButtonIcon>
+                            <ButtonIcon class="mono xs shadow-md">
+                                <Icon name="carbon:logo-facebook" />
+                            </ButtonIcon>
+                            <ButtonIcon class="mono xs shadow-md">
+                                <Icon name="carbon:logo-linkedin" />
+                            </ButtonIcon>
+                        </div>
+                    </div>
+                    
+                    <!-- bottom card v3 -->
+                    <div class="flex flex-col items-center justify-between px-6 py-4 sm:flex-row">
+                        <div class="w-full grow space-y-1 sm:w-auto sm:max-w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="text-sm">
+                                    Progress
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    12%
+                                </p>
+                            </div>
+                            <div role="progressbar" aria-valuenow="12" aria-valuemax="100" class="relative w-full overflow-hidden h-1 rounded-full bg-gray-400">
+                                <div class="absolute start-0 top-0 h-full transition-all duration-300 bg-sky-500 rounded-full" style="width: 12%;"></div>
+                            </div>
+                        </div>
+                        <div class="mt-4 w-full sm:mt-0 sm:w-auto">
+                            <ButtonBaseExpanded class="mono">
+                                View Profile
+                            </ButtonBaseExpanded>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- begin card v3 -->
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-md">
+                    <!-- top card v3 -->
+                    <div class="flex flex-col items-center border-b p-6 sm:flex-row">
+                        <div class="flex flex-col items-center gap-3 sm:flex-row">
+                            <Avatar class="lg">
+                                <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-full" />
+                            </Avatar>
+                            <div class="text-center sm:text-left">
+                                <h4 class="font-medium leading-tight">
+                                    Ryoma Echizen
+                                </h4>
+                                <p class="text-sm text-gray-400">
+                                    UI/UX Designer
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex items-center gap-3 sm:ms-auto sm:mt-0">
+                            <ButtonIcon class="mono xs shadow-md">
+                                <Icon name="carbon:logo-instagram" />
+                            </ButtonIcon>
+                            <ButtonIcon class="mono xs shadow-md">
+                                <Icon name="carbon:logo-twitter" />
+                            </ButtonIcon>
+                            <ButtonIcon class="mono xs shadow-md">
+                                <Icon name="carbon:logo-facebook" />
+                            </ButtonIcon>
+                            <ButtonIcon class="mono xs shadow-md">
+                                <Icon name="carbon:logo-linkedin" />
+                            </ButtonIcon>
+                        </div>
+                    </div>
+                    
+                    <!-- bottom card v3 -->
+                    <div class="flex flex-col items-center justify-between px-6 py-4 sm:flex-row">
+                        <div class="w-full grow space-y-1 sm:w-auto sm:max-w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="text-sm">
+                                    Progress
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    67%
+                                </p>
+                            </div>
+                            <div role="progressbar" aria-valuenow="67" aria-valuemax="100" class="relative w-full overflow-hidden h-1 rounded-full bg-gray-400">
+                                <div class="absolute start-0 top-0 h-full transition-all duration-300 bg-sky-500 rounded-full" style="width: 67%;"></div>
+                            </div>
+                        </div>
+                        <div class="mt-4 w-full sm:mt-0 sm:w-auto">
+                            <ButtonBaseExpanded class="mono">
+                                View Profile
+                            </ButtonBaseExpanded>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- begin card ver 4 -->
+        <div class="pb-10">
+            <h2 class="text-3xl font-oswald font-bold mb-3">Card Ver. 4</h2>
+            <!-- card container -->
+            <div class="grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- begin card v4 -->
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-md hover:shadow-xl p-6">
+                    <div class="mb-3 flex w-full items-center justify-center">
+                        <Avatar class="lg square">
+                            <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-heading font-medium leading-tight">
+                            Mbingkamp Pisz
+                        </h3>
+                        <p class="text-xs leading-normal text-gray-400">
+                            Software Engineer
+                        </p>
+                    </div>
+                    <div class="mb-6 mt-4 flex items-center justify-center gap-3">
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                    </div>
+                </div>
+
+                <!-- begin card v4 -->
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-md hover:shadow-xl p-6">
+                    <div class="mb-3 flex w-full items-center justify-center">
+                        <Avatar class="lg square">
+                            <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-heading font-medium leading-tight">
+                            Mbingkamp Pisz
+                        </h3>
+                        <p class="text-xs leading-normal text-gray-400">
+                            Software Engineer
+                        </p>
+                    </div>
+                    <div class="mb-6 mt-4 flex items-center justify-center gap-3">
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                    </div>
+                </div>
+
+                <!-- begin card v4 -->
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-md hover:shadow-xl p-6">
+                    <div class="mb-3 flex w-full items-center justify-center">
+                        <Avatar class="lg square">
+                            <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-heading font-medium leading-tight">
+                            Mbingkamp Pisz
+                        </h3>
+                        <p class="text-xs leading-normal text-gray-400">
+                            Software Engineer
+                        </p>
+                    </div>
+                    <div class="mb-6 mt-4 flex items-center justify-center gap-3">
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                    </div>
+                </div>
+
+                <!-- begin card v4 -->
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-md hover:shadow-xl p-6">
+                    <div class="mb-3 flex w-full items-center justify-center">
+                        <Avatar class="lg square">
+                            <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-heading font-medium leading-tight">
+                            Mbingkamp Pisz
+                        </h3>
+                        <p class="text-xs leading-normal text-gray-400">
+                            Software Engineer
+                        </p>
+                    </div>
+                    <div class="mb-6 mt-4 flex items-center justify-center gap-3">
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

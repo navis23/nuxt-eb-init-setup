@@ -306,7 +306,7 @@
                                 <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-full" />
                             </Avatar>
                             <div class="text-center sm:text-left">
-                                <h4 class="font-medium">
+                                <h4 class="font-medium leading-tight">
                                     Mbingkamp Syy
                                 </h4>
                                 <p class="text-sm text-gray-400">
@@ -362,7 +362,7 @@
                                 <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-full" />
                             </Avatar>
                             <div class="text-center sm:text-left">
-                                <h4 class="font-medium">
+                                <h4 class="font-medium leading-tight">
                                     Ryoma Echizen
                                 </h4>
                                 <p class="text-sm text-gray-400">
@@ -408,6 +408,158 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- begin card ver 4 -->
+        <div class="pb-10">
+            <h2 class="text-3xl font-oswald font-bold mb-3">Card Ver. 4</h2>
+            <!-- card container -->
+            <div class="grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- begin card v4 -->
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-md hover:shadow-xl p-6">
+                    <div class="mb-3 flex w-full items-center justify-center">
+                        <Avatar class="lg square">
+                            <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-heading font-medium leading-tight">
+                            Mbingkamp Pisz
+                        </h3>
+                        <p class="text-xs leading-normal text-gray-400">
+                            Software Engineer
+                        </p>
+                    </div>
+                    <div class="mb-6 mt-4 flex items-center justify-center gap-3">
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                    </div>
+                </div>
+
+                <!-- begin card v4 -->
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-md hover:shadow-xl p-6">
+                    <div class="mb-3 flex w-full items-center justify-center">
+                        <Avatar class="lg square">
+                            <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-heading font-medium leading-tight">
+                            Mbingkamp Pisz
+                        </h3>
+                        <p class="text-xs leading-normal text-gray-400">
+                            Software Engineer
+                        </p>
+                    </div>
+                    <div class="mb-6 mt-4 flex items-center justify-center gap-3">
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                    </div>
+                </div>
+
+                <!-- begin card v4 -->
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-md hover:shadow-xl p-6">
+                    <div class="mb-3 flex w-full items-center justify-center">
+                        <Avatar class="lg square">
+                            <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-heading font-medium leading-tight">
+                            Mbingkamp Pisz
+                        </h3>
+                        <p class="text-xs leading-normal text-gray-400">
+                            Software Engineer
+                        </p>
+                    </div>
+                    <div class="mb-6 mt-4 flex items-center justify-center gap-3">
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                    </div>
+                </div>
+
+                <!-- begin card v4 -->
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-md hover:shadow-xl p-6">
+                    <div class="mb-3 flex w-full items-center justify-center">
+                        <Avatar class="lg square">
+                            <nuxt-img src="/img/ava04.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-heading font-medium leading-tight">
+                            Mbingkamp Pisz
+                        </h3>
+                        <p class="text-xs leading-normal text-gray-400">
+                            Software Engineer
+                        </p>
+                    </div>
+                    <div class="mb-6 mt-4 flex items-center justify-center gap-3">
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                        <Avatar class="xs square">
+                            <nuxt-img src="/img/ava03.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-8 w-8 rounded-md" />
+                        </Avatar>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                        <ButtonBase class="mono">
+                            Mono Button
+                        </ButtonBase>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

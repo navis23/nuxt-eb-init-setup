@@ -25,8 +25,9 @@
                 </nuxt-link>
             </div>
         </nav>
+
         <!-- group of button -->
-        <div class="pb-8">
+        <div class="pb-10">
             <h2 class="text-sky-600 text-3xl font-oswald font-bold mb-3">Button</h2>
             <div class="border p-4 rounded-xl bg-white">
                 <!-- begin standard button -->
@@ -361,7 +362,7 @@
         </div>
 
         <!-- group of badge & avatar -->
-        <div class="pb-8">
+        <div class="pb-10">
             <h2 class="text-sky-600 text-3xl font-oswald font-bold mb-3">Badge & Avatar</h2>
             <div class="border p-4 rounded-xl bg-white">
                 <!-- begin badge -->

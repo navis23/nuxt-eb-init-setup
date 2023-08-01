@@ -27,7 +27,7 @@
         </nav>
 
         <!-- begin card ver 1 -->
-        <div class="pb-4">
+        <div class="pb-10">
             <h2 class="text-3xl font-oswald font-bold mb-3">Card Ver. 1</h2>
 
             <!-- card container -->
@@ -183,7 +183,7 @@
         </div>
 
         <!-- begin card ver 2 -->
-        <div class="pb-4">
+        <div class="pb-10">
             <h2 class="text-3xl font-oswald font-bold mb-3">Card Ver. 2</h2>
             <!-- card container -->
             <div class="grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -288,6 +288,126 @@
                 </div>
                 
                 
+            </div>
+        </div>
+
+        <!-- begin card ver 3 -->
+        <div class="pb-10">
+            <h2 class="text-3xl font-oswald font-bold mb-3">Card Ver. 3</h2>
+            <!-- card container -->
+            <div class="grid w-full gap-4 lg:grid-cols-2">
+
+                <!-- begin card v3 -->
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-md">
+                    <!-- top card v3 -->
+                    <div class="flex flex-col items-center border-b p-6 sm:flex-row">
+                        <div class="flex flex-col items-center gap-3 sm:flex-row">
+                            <Avatar class="lg">
+                                <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-full" />
+                            </Avatar>
+                            <div class="text-center sm:text-left">
+                                <h4 class="font-medium">
+                                    Mbingkamp Syy
+                                </h4>
+                                <p class="text-sm text-gray-400">
+                                    Software Engineer
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex items-center gap-3 sm:mt-0 sm:ms-auto">
+                            <IButton class="mono xs shadow-md">
+                                <Icon name="carbon:logo-instagram" />
+                            </IButton>
+                            <IButton class="mono xs shadow-md">
+                                <Icon name="carbon:logo-twitter" />
+                            </IButton>
+                            <IButton class="mono xs shadow-md">
+                                <Icon name="carbon:logo-facebook" />
+                            </IButton>
+                            <IButton class="mono xs shadow-md">
+                                <Icon name="carbon:logo-linkedin" />
+                            </IButton>
+                        </div>
+                    </div>
+                    
+                    <!-- bottom card v3 -->
+                    <div class="flex flex-col items-center justify-between px-6 py-4 sm:flex-row">
+                        <div class="w-full grow space-y-1 sm:w-auto sm:max-w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="text-sm">
+                                    Progress
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    12%
+                                </p>
+                            </div>
+                            <div role="progressbar" aria-valuenow="12" aria-valuemax="100" class="relative w-full overflow-hidden h-1 rounded-full bg-gray-400">
+                                <div class="absolute start-0 top-0 h-full transition-all duration-300 bg-sky-500 rounded-full" style="width: 12%;"></div>
+                            </div>
+                        </div>
+                        <div class="mt-4 w-full sm:mt-0 sm:w-auto">
+                            <LButton class="mono">
+                                View Profile
+                            </LButton>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- begin card v3 -->
+                <div class="relative w-full border bg-white transition-all duration-300 rounded-md">
+                    <!-- top card v3 -->
+                    <div class="flex flex-col items-center border-b p-6 sm:flex-row">
+                        <div class="flex flex-col items-center gap-3 sm:flex-row">
+                            <Avatar class="lg">
+                                <nuxt-img src="/img/ava02.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-full" />
+                            </Avatar>
+                            <div class="text-center sm:text-left">
+                                <h4 class="font-medium">
+                                    Ryoma Echizen
+                                </h4>
+                                <p class="text-sm text-gray-400">
+                                    UI/UX Designer
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex items-center gap-3 sm:ms-auto sm:mt-0">
+                            <IButton class="mono xs shadow-md">
+                                <Icon name="carbon:logo-instagram" />
+                            </IButton>
+                            <IButton class="mono xs shadow-md">
+                                <Icon name="carbon:logo-twitter" />
+                            </IButton>
+                            <IButton class="mono xs shadow-md">
+                                <Icon name="carbon:logo-facebook" />
+                            </IButton>
+                            <IButton class="mono xs shadow-md">
+                                <Icon name="carbon:logo-linkedin" />
+                            </IButton>
+                        </div>
+                    </div>
+                    
+                    <!-- bottom card v3 -->
+                    <div class="flex flex-col items-center justify-between px-6 py-4 sm:flex-row">
+                        <div class="w-full grow space-y-1 sm:w-auto sm:max-w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="text-sm">
+                                    Progress
+                                </h4>
+                                <p class="text-gray-400 text-sm">
+                                    67%
+                                </p>
+                            </div>
+                            <div role="progressbar" aria-valuenow="67" aria-valuemax="100" class="relative w-full overflow-hidden h-1 rounded-full bg-gray-400">
+                                <div class="absolute start-0 top-0 h-full transition-all duration-300 bg-sky-500 rounded-full" style="width: 67%;"></div>
+                            </div>
+                        </div>
+                        <div class="mt-4 w-full sm:mt-0 sm:w-auto">
+                            <LButton class="mono">
+                                View Profile
+                            </LButton>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

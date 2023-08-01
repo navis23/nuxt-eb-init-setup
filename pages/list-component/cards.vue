@@ -65,12 +65,12 @@
                             <p class="text-xs text-gray-400">15 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <SmButton class="mono">
+                            <ButtonBaseSmall class="mono">
                                 <Icon name="carbon:moon" class="text-2xl" />
                                 <span>
                                     Switch
                                 </span>
-                            </SmButton>
+                            </ButtonBaseSmall>
                         </div>
                     </div>
                 </div>
@@ -100,12 +100,12 @@
                             <p class="text-xs text-gray-400">10 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <SmButton class="mono">
+                            <ButtonBaseSmall class="mono">
                                 <Icon name="carbon:moon" class="text-2xl" />
                                 <span>
                                     Edit
                                 </span>
-                            </SmButton>
+                            </ButtonBaseSmall>
                         </div>
                     </div>
                 </div>
@@ -135,12 +135,12 @@
                             <p class="text-xs text-gray-400">44 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <SmButton class="mono">
+                            <ButtonBaseSmall class="mono">
                                 <Icon name="carbon:moon" class="text-2xl" />
                                 <span>
                                     Switch
                                 </span>
-                            </SmButton>
+                            </ButtonBaseSmall>
                         </div>
                     </div>
                 </div>
@@ -170,12 +170,12 @@
                             <p class="text-xs text-gray-400">1 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <SmButton class="mono">
+                            <ButtonBaseSmall class="mono">
                                 <Icon name="carbon:moon" class="text-2xl" />
                                 <span>
                                     Switch
                                 </span>
-                            </SmButton>
+                            </ButtonBaseSmall>
                         </div>
                     </div>
                 </div>
@@ -199,9 +199,9 @@
                             <p class="text-xs text-gray-400">15 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <IButton class="mono sm">
+                            <ButtonIcon class="mono sm">
                                 <Icon name="carbon:overflow-menu-horizontal" />
-                            </IButton>
+                            </ButtonIcon>
                         </div>
                     </div>
                     <div>
@@ -213,12 +213,12 @@
                         </p>
                     </div>
                     <div class="flex items-center gap-2">
-                        <SButton class="mono w-full">
+                        <ButtonBase class="mono w-full">
                             Mono Button
-                        </SButton>
-                        <SButton class="dark w-full">
+                        </ButtonBase>
+                        <ButtonBase class="dark w-full">
                             Dark Button
-                        </SButton>
+                        </ButtonBase>
                     </div>
                 </div>
                 <div class="relative w-full border bg-white transition-all duration-300 rounded-xl p-4">
@@ -233,9 +233,9 @@
                             <p class="text-xs text-gray-400">15 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <IButton class="mono sm">
+                            <ButtonIcon class="mono sm">
                                 <Icon name="carbon:overflow-menu-horizontal" />
-                            </IButton>
+                            </ButtonIcon>
                         </div>
                     </div>
                     <div>
@@ -247,9 +247,9 @@
                         </p>
                     </div>
                     <div class="flex items-center gap-2">
-                        <SButton class="w-full">
+                        <ButtonBase class="w-full">
                             Full Button
-                        </SButton>
+                        </ButtonBase>
                     </div>
                 </div>
                 <div class="relative w-full border bg-white transition-all duration-300 rounded-xl p-4">
@@ -264,9 +264,9 @@
                             <p class="text-xs text-gray-400">15 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <IButton class="mono sm">
+                            <ButtonIcon class="mono sm">
                                 <Icon name="carbon:overflow-menu-horizontal" />
-                            </IButton>
+                            </ButtonIcon>
                         </div>
                     </div>
                     <div>
@@ -278,12 +278,12 @@
                         </p>
                     </div>
                     <div class="flex items-center gap-2">
-                        <SButton class="mono w-full">
+                        <ButtonBase class="mono w-full">
                             Mono Button
-                        </SButton>
-                        <SButton class="dark w-full">
+                        </ButtonBase>
+                        <ButtonBase class="dark w-full">
                             Dark Button
-                        </SButton>
+                        </ButtonBase>
                     </div>
                 </div>
                 
@@ -315,18 +315,18 @@
                             </div>
                         </div>
                         <div class="mt-4 flex items-center gap-3 sm:mt-0 sm:ms-auto">
-                            <IButton class="mono xs shadow-md">
+                            <ButtonIcon class="mono xs shadow-md">
                                 <Icon name="carbon:logo-instagram" />
-                            </IButton>
-                            <IButton class="mono xs shadow-md">
+                            </ButtonIcon>
+                            <ButtonIcon class="mono xs shadow-md">
                                 <Icon name="carbon:logo-twitter" />
-                            </IButton>
-                            <IButton class="mono xs shadow-md">
+                            </ButtonIcon>
+                            <ButtonIcon class="mono xs shadow-md">
                                 <Icon name="carbon:logo-facebook" />
-                            </IButton>
-                            <IButton class="mono xs shadow-md">
+                            </ButtonIcon>
+                            <ButtonIcon class="mono xs shadow-md">
                                 <Icon name="carbon:logo-linkedin" />
-                            </IButton>
+                            </ButtonIcon>
                         </div>
                     </div>
                     
@@ -346,9 +346,9 @@
                             </div>
                         </div>
                         <div class="mt-4 w-full sm:mt-0 sm:w-auto">
-                            <LButton class="mono">
+                            <ButtonBaseExpanded class="mono">
                                 View Profile
-                            </LButton>
+                            </ButtonBaseExpanded>
                         </div>
                     </div>
                 </div>
@@ -371,18 +371,18 @@
                             </div>
                         </div>
                         <div class="mt-4 flex items-center gap-3 sm:ms-auto sm:mt-0">
-                            <IButton class="mono xs shadow-md">
+                            <ButtonIcon class="mono xs shadow-md">
                                 <Icon name="carbon:logo-instagram" />
-                            </IButton>
-                            <IButton class="mono xs shadow-md">
+                            </ButtonIcon>
+                            <ButtonIcon class="mono xs shadow-md">
                                 <Icon name="carbon:logo-twitter" />
-                            </IButton>
-                            <IButton class="mono xs shadow-md">
+                            </ButtonIcon>
+                            <ButtonIcon class="mono xs shadow-md">
                                 <Icon name="carbon:logo-facebook" />
-                            </IButton>
-                            <IButton class="mono xs shadow-md">
+                            </ButtonIcon>
+                            <ButtonIcon class="mono xs shadow-md">
                                 <Icon name="carbon:logo-linkedin" />
-                            </IButton>
+                            </ButtonIcon>
                         </div>
                     </div>
                     
@@ -402,9 +402,9 @@
                             </div>
                         </div>
                         <div class="mt-4 w-full sm:mt-0 sm:w-auto">
-                            <LButton class="mono">
+                            <ButtonBaseExpanded class="mono">
                                 View Profile
-                            </LButton>
+                            </ButtonBaseExpanded>
                         </div>
                     </div>
                 </div>

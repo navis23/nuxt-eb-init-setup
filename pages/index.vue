@@ -17,7 +17,7 @@
                         card
                     </Badge>
                 </nuxt-link>
-                <nuxt-link to="/">
+                <nuxt-link to="/list-component/tables">
                     <Badge class="mono">
                         table
                     </Badge>
@@ -36,19 +36,19 @@
                     <Icon name="svg-spinners:clock" class="font-semibold text-4xl text-teal-500" />
                 </div>
                 <div>
-                    <Icon name="carbon:moon" class="font-semibold text-4xl text-purple-500" />
+                    <Icon name="lucide:moon" class="font-semibold text-4xl text-purple-500" />
                 </div>
                 <div>
-                    <Icon name="carbon:bee" class="font-semibold text-4xl text-amber-500" />
+                    <Icon name="lucide:bird" class="font-semibold text-4xl text-amber-500" />
                 </div>
                 <div>
-                    <Icon name="carbon:rain-heavy" class="font-semibold text-4xl text-sky-500" />
+                    <Icon name="lucide:fingerprint" class="font-semibold text-4xl text-sky-500" />
                 </div>
                 <div>
-                    <Icon name="carbon:bee-bat" class="font-semibold text-4xl text-indigo-500" />
+                    <Icon name="lucide:cat" class="font-semibold text-4xl text-indigo-500" />
                 </div>
                 <div>
-                    <Icon name="carbon:sun" class="font-semibold text-4xl text-yellow-500" />
+                    <Icon name="lucide:sun" class="font-semibold text-4xl text-yellow-500" />
                 </div>
                 <div>
                     <Icon name="svg-spinners:tadpole" class="font-semibold text-4xl text-red-500" />
@@ -192,7 +192,7 @@
                         leave-to="opacity-0"
                     >
                         <span>
-                            <Icon name="carbon:touch-1-filled" class="text-5xl font-bold text-lime-500" />
+                            <Icon name="lucide:github" class="text-5xl font-bold text-lime-500" />
                         </span>
                     </HeadlessTransitionRoot>
                 </ClientOnly>
@@ -201,32 +201,32 @@
             <div class="py-4">
                 <HeadlessPopover class="relative">
                     <HeadlessPopoverButton>
-                        <SButton>
+                        <ButtonBase class="mono">
                             Test Popover
-                        </SButton>
+                        </ButtonBase>
                     </HeadlessPopoverButton>
 
                     <HeadlessPopoverPanel class="absolute z-10 bg-white rounded-md p-4 mt-3">
                         <div class="grid grid-cols-2 gap-6 pb-4">
                             <nuxt-link to="/">
-                                <SButton class="dark">
+                                <ButtonBase class="dark">
                                     Home
-                                </SButton>
+                                </ButtonBase>
                             </nuxt-link>
                             <nuxt-link to="/list-component">
-                                <SButton class="dark">
+                                <ButtonBase class="dark">
                                     Components
-                                </SButton>
+                                </ButtonBase>
                             </nuxt-link>
                             <nuxt-link to="/list-component/cards">
-                                <SButton class="dark">
+                                <ButtonBase class="dark">
                                     Cards
-                                </SButton>
+                                </ButtonBase>
                             </nuxt-link>
                             <nuxt-link to="/">
-                                <SButton class="dark">
+                                <ButtonBase class="dark">
                                     Table
-                                </SButton>
+                                </ButtonBase>
                             </nuxt-link>
                         </div>
 
@@ -273,19 +273,19 @@
 
             <div class="py-4 flex flex-wrap gap-4">
                 <ButtonIcon @click="setIsOpen(true)">
-                    <Icon name="carbon:moon" />
+                    <Icon name="lucide:moon" />
                 </ButtonIcon>
 
                 <ButtonIcon class="warning" @click="setIsOpen(true)">
-                    <Icon name="carbon:moon" />
+                    <Icon name="lucide:moon" />
                 </ButtonIcon>
 
                 <ButtonIcon class="danger" @click="setIsOpen(true)">
-                    <Icon name="carbon:moon" />
+                    <Icon name="lucide:moon" />
                 </ButtonIcon>
 
                 <ButtonIcon class="muted" @click="setIsOpen(true)">
-                    <Icon name="carbon:moon" />
+                    <Icon name="lucide:moon" />
                 </ButtonIcon>
             </div>
 

@@ -1,8 +1,11 @@
 <template>
     <div class="px-4 lg:px-32 py-10">
         <nav class="bg-gray-800 text-white h-30 flex justify-between items-center w-full p-4 mb-5 rounded-md">
-            <h1 class="text-4xl font-bold text-sky-500 uppercase font-oswald">Card Version for EB UI</h1>
-            <div class="flex justify-between items-center gap-4 ">
+            <div class="font-bold flex items-center gap-x-2 text-sky-500 uppercase font-oswald">
+                <Icon name="lucide:gallery-vertical" class="text-4xl" />
+                <h1 class="text-3xl ">Card Version for EB UI</h1>
+            </div>
+            <div class="flex justify-between flex-wrap items-center gap-4 ">
                 <nuxt-link to="/">
                     <Badge class="mono">
                         Home
@@ -18,7 +21,7 @@
                         card
                     </Badge>
                 </nuxt-link>
-                <nuxt-link to="/">
+                <nuxt-link to="/list-component/tables">
                     <Badge class="mono">
                         table
                     </Badge>
@@ -66,7 +69,7 @@
                         </div>
                         <div class="ms-auto">
                             <ButtonBaseSmall class="mono">
-                                <Icon name="carbon:moon" class="text-2xl" />
+                                <Icon name="lucide:moon" class="text-2xl" />
                                 <span>
                                     Switch
                                 </span>
@@ -101,7 +104,7 @@
                         </div>
                         <div class="ms-auto">
                             <ButtonBaseSmall class="mono">
-                                <Icon name="carbon:moon" class="text-2xl" />
+                                <Icon name="lucide:moon" class="text-2xl" />
                                 <span>
                                     Edit
                                 </span>
@@ -136,7 +139,7 @@
                         </div>
                         <div class="ms-auto">
                             <ButtonBaseSmall class="mono">
-                                <Icon name="carbon:moon" class="text-2xl" />
+                                <Icon name="lucide:moon" class="text-2xl" />
                                 <span>
                                     Switch
                                 </span>
@@ -171,7 +174,7 @@
                         </div>
                         <div class="ms-auto">
                             <ButtonBaseSmall class="mono">
-                                <Icon name="carbon:moon" class="text-2xl" />
+                                <Icon name="lucide:moon" class="text-2xl" />
                                 <span>
                                     Switch
                                 </span>
@@ -199,9 +202,38 @@
                             <p class="text-xs text-gray-400">15 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <ButtonIcon class="mono sm">
-                                <Icon name="carbon:overflow-menu-horizontal" />
-                            </ButtonIcon>
+                            <HeadlessPopover class="relative">
+                                <HeadlessPopoverButton class="transition-all duration-300 ui-open:rotate-90 ui-open:transform">
+                                    <ButtonIcon class="mono sm">
+                                        <Icon name="lucide:more-horizontal" />
+                                    </ButtonIcon>
+                                </HeadlessPopoverButton>
+
+                                <HeadlessPopoverPanel class="absolute z-10 bg-white rounded-md end-0 origin-top-right p-2 mt-2 w-56 border">
+                                    <div class="flex flex-col items-center w-full gap-2">
+                                        <nuxt-link to="/">
+                                            <ButtonBase class="dark">
+                                                Home
+                                            </ButtonBase>
+                                        </nuxt-link>
+                                        <nuxt-link to="/list-component">
+                                            <ButtonBase class="dark">
+                                                Components
+                                            </ButtonBase>
+                                        </nuxt-link>
+                                        <nuxt-link to="/list-component/cards">
+                                            <ButtonBase class="dark">
+                                                Cards
+                                            </ButtonBase>
+                                        </nuxt-link>
+                                        <nuxt-link to="/">
+                                            <ButtonBase class="dark">
+                                                Table
+                                            </ButtonBase>
+                                        </nuxt-link>
+                                    </div>
+                                </HeadlessPopoverPanel>
+                            </HeadlessPopover>
                         </div>
                     </div>
                     <div>
@@ -234,7 +266,7 @@
                         </div>
                         <div class="ms-auto">
                             <ButtonIcon class="mono sm">
-                                <Icon name="carbon:overflow-menu-horizontal" />
+                                <Icon name="lucide:more-horizontal" />
                             </ButtonIcon>
                         </div>
                     </div>
@@ -265,7 +297,7 @@
                         </div>
                         <div class="ms-auto">
                             <ButtonIcon class="mono sm">
-                                <Icon name="carbon:overflow-menu-horizontal" />
+                                <Icon name="lucide:more-horizontal" />
                             </ButtonIcon>
                         </div>
                     </div>
@@ -316,16 +348,16 @@
                         </div>
                         <div class="mt-4 flex items-center gap-3 sm:mt-0 sm:ms-auto">
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-instagram" />
+                                <Icon name="lucide:instagram" />
                             </ButtonIcon>
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-twitter" />
+                                <Icon name="lucide:twitter" />
                             </ButtonIcon>
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-facebook" />
+                                <Icon name="lucide:facebook" />
                             </ButtonIcon>
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-linkedin" />
+                                <Icon name="lucide:linkedin" />
                             </ButtonIcon>
                         </div>
                     </div>
@@ -372,16 +404,16 @@
                         </div>
                         <div class="mt-4 flex items-center gap-3 sm:ms-auto sm:mt-0">
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-instagram" />
+                                <Icon name="lucide:instagram" />
                             </ButtonIcon>
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-twitter" />
+                                <Icon name="lucide:twitter" />
                             </ButtonIcon>
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-facebook" />
+                                <Icon name="lucide:facebook" />
                             </ButtonIcon>
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-linkedin" />
+                                <Icon name="lucide:linkedin" />
                             </ButtonIcon>
                         </div>
                     </div>

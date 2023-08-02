@@ -31,27 +31,30 @@
         <!-- start table v1 -->
         <div class="pb-10">
             <h2 class="text-3xl font-oswald font-bold mb-3">Table Ver. 1</h2>
-            <!-- table container -->
+            <!-- table set container -->
             <div class="mt-6">
                 <!-- search & action -->
-                <div class="mb-2 flex w-full flex-col items-end justify-between gap-2 sm:flex-row">
+                <div class="mb-6 flex w-full flex-col items-end justify-between gap-2 sm:flex-row">
                     <div class="flex w-full items-center sm:w-auto">
                         <div class="relative w-full sm:w-auto">
                             <FormKit
                                 type="search"
                                 placeholder="Search..."
                                 prefix-icon="search"
-                                value="Apple Cider"
+                                value="Barange ges"
+                                outer-class="!mb-0"
+                                inner-class="!mb-0"
                             />
                         </div>
                     </div>
-                    <ButtonBaseExpanded class="mb-4 flex items-center justify-center gap-x-1">
+                    <ButtonBaseExpanded class="flex items-center justify-center gap-x-1">
                         <Icon name="lucide:copy-plus" class="text-2xl"/>
                         New Data
                     </ButtonBaseExpanded>
                 </div>
+
                 <!-- table & pagination -->
-                <div class="">
+                <div class="mt-2">
                     <!-- table start -->
                     <div class="w-full">
                         <div class="flex flex-col">
@@ -103,15 +106,97 @@
                                                         </span> 
                                                     </td>
                                                     <td class="whitespace-nowrap text-sm p-4">
-                                                        <ButtonBase class="mono">
-                                                            Manage
-                                                        </ButtonBase>
+                                                        <HeadlessPopover class="relative">
+                                                            <HeadlessPopoverButton class="outline-none">
+                                                                <ButtonBase class="mono">
+                                                                    <div class="flex gap-x-1 items-center justify-center leading-none">
+                                                                        <p>Manage Data</p>
+                                                                        <Icon name="lucide:chevron-down" class="text-xl font-bold transition-all duration-300 ui-open:rotate-180 ui-open:transform"/>
+                                                                    </div>
+                                                                </ButtonBase>
+                                                                <!-- <ButtonIcon class="mono sm">
+                                                                    <Icon name="lucide:more-horizontal" />
+                                                                </ButtonIcon> -->
+                                                            </HeadlessPopoverButton>
+
+                                                            <HeadlessPopoverPanel class="absolute z-10 bg-gray-600 rounded-md end-0 origin-top-right px-2 py-4 mt-2 w-56 border">
+                                                                <div class="flex flex-col items-center w-full gap-3">
+                                                                    <ButtonBaseSmall class=" w-full">
+                                                                        <Icon name="lucide:eye" class="text-2xl" />
+                                                                        <span>
+                                                                            Detail Data
+                                                                        </span>
+                                                                    </ButtonBaseSmall>
+                                                    
+                                                                    <ButtonBaseSmall class="warning w-full">
+                                                                        <Icon name="lucide:edit-3" class="text-2xl" />
+                                                                        <span>
+                                                                            Edit Data
+                                                                        </span>
+                                                                    </ButtonBaseSmall>
+                                                    
+                                                                    <ButtonBaseSmall class="danger w-full">
+                                                                        <Icon name="lucide:trash" class="text-2xl" />
+                                                                        <span>
+                                                                            Delete Data
+                                                                        </span>
+                                                                    </ButtonBaseSmall>
+                                                                </div>
+                                                            </HeadlessPopoverPanel>
+                                                        </HeadlessPopover>
+                                        
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pagination start -->
+                    <div class="mt-6">
+                        <div class="inline-flex w-full flex-col md:flex-row md:justify-between">
+                            <ul class="mb-4 inline-flex flex-wrap justify-center gap-2 border p-1 md:mb-0 md:gap-1 rounded-xl">
+                                <li>
+                                    <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center text-sm transition-all duration-300 border border-gray-200 hover:bg-gray-100 text-gray-500 hover:text-gray-700 bg-white rounded-xl">
+                                        <Icon name="lucide:chevron-left" class="text-xl"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center border text-sm transition-all duration-300 bg-sky-500 border-sky-500 shadow-sky-500/50 text-white shadow-sm rounded-xl">1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center text-sm transition-all duration-300 border border-gray-200 hover:bg-gray-100 text-gray-500 hover:text-gray-700 bg-white rounded-xl">2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center text-sm transition-all duration-300 border border-gray-200 hover:bg-gray-100 text-gray-500 hover:text-gray-700 bg-white rounded-xl">3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center text-sm transition-all duration-300 border border-gray-200 hover:bg-gray-100 text-gray-500 hover:text-gray-700 bg-white rounded-xl">4</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center text-sm transition-all duration-300 border border-gray-200 hover:bg-gray-100 text-gray-500 hover:text-gray-700 bg-white rounded-xl">5</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center text-sm transition-all duration-300 border border-gray-200 hover:bg-gray-100 text-gray-500 hover:text-gray-700 bg-white rounded-xl">
+                                        <Icon name="lucide:chevron-right" class="text-xl"/>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="flex items-center justify-end gap-1 p-1 rounded-xl">
+                                <FormKit
+                                    type="select"
+                                    name="count_data"
+                                    :options="[
+                                        10,
+                                        25,
+                                        50,
+                                        100
+                                    ]"
+                                    outer-class="!mb-0"
+                                    inner-class="!mb-0"
+                                />
                             </div>
                         </div>
                     </div>

@@ -90,42 +90,42 @@
                 <p class="mt-3">#Small Button with one sentence combine with icon, write component ButtonBaseSmall </p>
                 <div class="py-4 flex flex-wrap gap-4">
                     <ButtonBaseSmall>
-                        <Icon name="carbon:view" class="text-2xl" />
+                        <Icon name="lucide:eye" class="text-2xl" />
                         <span>
                             View
                         </span>
                     </ButtonBaseSmall>
     
                     <ButtonBaseSmall class="warning">
-                        <Icon name="carbon:edit" class="text-2xl" />
+                        <Icon name="lucide:edit-3" class="text-2xl" />
                         <span>
                             Edit
                         </span>
                     </ButtonBaseSmall>
     
                     <ButtonBaseSmall class="danger">
-                        <Icon name="carbon:trash-can" class="text-2xl" />
+                        <Icon name="lucide:trash" class="text-2xl" />
                         <span>
                             Delete
                         </span>
                     </ButtonBaseSmall>
     
                     <ButtonBaseSmall class="muted">
-                        <Icon name="carbon:close" class="text-2xl" />
+                        <Icon name="lucide:x" class="text-2xl" />
                         <span>
                             Close
                         </span>
                     </ButtonBaseSmall>
 
                     <ButtonBaseSmall class="mono">
-                        <Icon name="carbon:moon" class="text-2xl" />
+                        <Icon name="lucide:moon" class="text-2xl" />
                         <span>
                             Switch
                         </span>
                     </ButtonBaseSmall>
 
                     <ButtonBaseSmall class="dark">
-                        <Icon name="carbon:sun" class="text-2xl" />
+                        <Icon name="lucide:sun" class="text-2xl" />
                         <span>
                             Bright
                         </span>
@@ -138,52 +138,52 @@
                 <div class="py-4 flex flex-wrap gap-4">
                     <!-- circle icon button -->
                     <ButtonIcon>
-                        <Icon name="carbon:view" />
+                        <Icon name="lucide:eye" />
                     </ButtonIcon>
     
                     <ButtonIcon class="warning">
-                        <Icon name="carbon:edit" />
+                        <Icon name="lucide:edit-3" />
                     </ButtonIcon>
     
                     <ButtonIcon class="danger">
-                        <Icon name="carbon:trash-can" />
+                        <Icon name="lucide:trash" />
                     </ButtonIcon>
     
                     <ButtonIcon class="muted">
-                        <Icon name="carbon:close" />
+                        <Icon name="lucide:x" />
                     </ButtonIcon>
 
                     <ButtonIcon class="mono">
-                        <Icon name="carbon:moon" />
+                        <Icon name="lucide:moon" />
                     </ButtonIcon>
 
                     <ButtonIcon class="dark">
-                        <Icon name="carbon:sun" />
+                        <Icon name="lucide:sun" />
                     </ButtonIcon>
 
                     <!-- square icon button -->
                     <ButtonIcon class="square">
-                        <Icon name="carbon:view" />
+                        <Icon name="lucide:eye" />
                     </ButtonIcon>
     
                     <ButtonIcon class="warning square">
-                        <Icon name="carbon:edit" />
+                        <Icon name="lucide:edit-3" />
                     </ButtonIcon>
     
                     <ButtonIcon class="danger square">
-                        <Icon name="carbon:trash-can" />
+                        <Icon name="lucide:trash" />
                     </ButtonIcon>
     
                     <ButtonIcon class="muted square">
-                        <Icon name="carbon:close" />
+                        <Icon name="lucide:x" />
                     </ButtonIcon>
 
                     <ButtonIcon class="mono square">
-                        <Icon name="carbon:moon" />
+                        <Icon name="lucide:moon" />
                     </ButtonIcon>
 
                     <ButtonIcon class="dark square">
-                        <Icon name="carbon:sun" />
+                        <Icon name="lucide:sun" />
                     </ButtonIcon>
                 </div>
 
@@ -191,52 +191,52 @@
                 <div class="py-4 flex flex-wrap gap-4">
                     <!-- circle small icon button -->
                     <ButtonIcon class="sm">
-                        <Icon name="carbon:view" />
+                        <Icon name="lucide:eye" />
                     </ButtonIcon>
     
                     <ButtonIcon class="warning sm">
-                        <Icon name="carbon:edit" />
+                        <Icon name="lucide:edit-3" />
                     </ButtonIcon>
     
                     <ButtonIcon class="danger sm">
-                        <Icon name="carbon:trash-can" />
+                        <Icon name="lucide:trash" />
                     </ButtonIcon>
     
                     <ButtonIcon class="muted sm">
-                        <Icon name="carbon:close" />
+                        <Icon name="lucide:x" />
                     </ButtonIcon>
 
                     <ButtonIcon class="mono sm">
-                        <Icon name="carbon:moon" />
+                        <Icon name="lucide:moon" />
                     </ButtonIcon>
 
                     <ButtonIcon class="dark sm">
-                        <Icon name="carbon:sun" />
+                        <Icon name="lucide:sun" />
                     </ButtonIcon>
 
                     <!-- square small icon button -->
                     <ButtonIcon class="square sm">
-                        <Icon name="carbon:view" />
+                        <Icon name="lucide:eye" />
                     </ButtonIcon>
     
                     <ButtonIcon class="warning square sm">
-                        <Icon name="carbon:edit" />
+                        <Icon name="lucide:edit-3" />
                     </ButtonIcon>
     
                     <ButtonIcon class="danger square sm">
-                        <Icon name="carbon:trash-can" />
+                        <Icon name="lucide:trash" />
                     </ButtonIcon>
     
                     <ButtonIcon class="muted square sm">
-                        <Icon name="carbon:close" />
+                        <Icon name="lucide:x" />
                     </ButtonIcon>
 
                     <ButtonIcon class="mono square sm">
-                        <Icon name="carbon:moon" />
+                        <Icon name="lucide:moon" />
                     </ButtonIcon>
 
                     <ButtonIcon class="dark square sm">
-                        <Icon name="carbon:sun" />
+                        <Icon name="lucide:sun" />
                     </ButtonIcon>
                 </div>
 
@@ -244,52 +244,52 @@
                 <div class="py-4 flex flex-wrap gap-4">
                     <!-- circle mini xs icon button -->
                     <ButtonIcon class="xs">
-                        <Icon name="carbon:view" />
+                        <Icon name="lucide:eye" />
                     </ButtonIcon>
     
                     <ButtonIcon class="warning xs">
-                        <Icon name="carbon:edit" />
+                        <Icon name="lucide:edit-3" />
                     </ButtonIcon>
     
                     <ButtonIcon class="danger xs">
-                        <Icon name="carbon:trash-can" />
+                        <Icon name="lucide:trash" />
                     </ButtonIcon>
     
                     <ButtonIcon class="muted xs">
-                        <Icon name="carbon:close" />
+                        <Icon name="lucide:x" />
                     </ButtonIcon>
 
                     <ButtonIcon class="mono xs">
-                        <Icon name="carbon:moon" />
+                        <Icon name="lucide:moon" />
                     </ButtonIcon>
 
                     <ButtonIcon class="dark xs">
-                        <Icon name="carbon:sun" />
+                        <Icon name="lucide:sun" />
                     </ButtonIcon>
 
                     <!-- square mini xs icon button -->
                     <ButtonIcon class="square xs">
-                        <Icon name="carbon:view" />
+                        <Icon name="lucide:eye" />
                     </ButtonIcon>
     
                     <ButtonIcon class="warning square xs">
-                        <Icon name="carbon:edit" />
+                        <Icon name="lucide:edit-3" />
                     </ButtonIcon>
     
                     <ButtonIcon class="danger square xs">
-                        <Icon name="carbon:trash-can" />
+                        <Icon name="lucide:trash" />
                     </ButtonIcon>
     
                     <ButtonIcon class="muted square xs">
-                        <Icon name="carbon:close" />
+                        <Icon name="lucide:x" />
                     </ButtonIcon>
 
                     <ButtonIcon class="mono square xs">
-                        <Icon name="carbon:moon" />
+                        <Icon name="lucide:moon" />
                     </ButtonIcon>
 
                     <ButtonIcon class="dark square xs">
-                        <Icon name="carbon:sun" />
+                        <Icon name="lucide:sun" />
                     </ButtonIcon>
                 </div>
 
@@ -298,63 +298,63 @@
                 <div class="py-4 flex flex-wrap gap-4">
                     <!-- circle icon tooltips button -->
                     <ButtonIconTooltip>
-                        <Icon name="carbon:view" />
+                        <Icon name="lucide:eye" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Lihat Data</span>
                     </ButtonIconTooltip>
     
                     <ButtonIconTooltip class="warning">
-                        <Icon name="carbon:edit" />
+                        <Icon name="lucide:edit-3" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Edit Data</span>
                     </ButtonIconTooltip>
     
                     <ButtonIconTooltip class="danger">
-                        <Icon name="carbon:trash-can" />
+                        <Icon name="lucide:trash" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Hapus Data</span>
                     </ButtonIconTooltip>
     
                     <ButtonIconTooltip class="muted">
-                        <Icon name="carbon:close" />
+                        <Icon name="lucide:x" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Keluar</span>
                     </ButtonIconTooltip>
 
                     <ButtonIconTooltip class="mono">
-                        <Icon name="carbon:moon" />
+                        <Icon name="lucide:moon" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Darkness</span>
                     </ButtonIconTooltip>
 
                     <ButtonIconTooltip class="dark">
-                        <Icon name="carbon:sun" />
+                        <Icon name="lucide:sun" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Brightness</span>
                     </ButtonIconTooltip>
 
                     <!-- square icon tooltips button -->
                     <ButtonIconTooltip class="square">
-                        <Icon name="carbon:view" />
+                        <Icon name="lucide:eye" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Lihat Data</span>
                     </ButtonIconTooltip>
     
                     <ButtonIconTooltip class="warning square">
-                        <Icon name="carbon:edit" />
+                        <Icon name="lucide:edit-3" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Edit Data</span>
                     </ButtonIconTooltip>
     
                     <ButtonIconTooltip class="danger square">
-                        <Icon name="carbon:trash-can" />
+                        <Icon name="lucide:trash" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Hapus Data</span>
                     </ButtonIconTooltip>
     
                     <ButtonIconTooltip class="muted square">
-                        <Icon name="carbon:close" />
+                        <Icon name="lucide:x" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Keluar</span>
                     </ButtonIconTooltip>
 
                     <ButtonIconTooltip class="mono square">
-                        <Icon name="carbon:moon" />
+                        <Icon name="lucide:moon" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Darkness</span>
                     </ButtonIconTooltip>
 
                     <ButtonIconTooltip class="dark square">
-                        <Icon name="carbon:sun" />
+                        <Icon name="lucide:sun" />
                         <span class="absolute bg-gray-700 text-white px-1 py-2 rounded-md text-xs font-opensans -top-9 min-w-full w-24 hidden group-hover:block transition ease-in-out duration-300">Brightness</span>
                     </ButtonIconTooltip>
                 </div>

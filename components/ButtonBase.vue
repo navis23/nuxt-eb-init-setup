@@ -19,7 +19,7 @@
     @apply bg-slate-500 hover:bg-slate-400
 }
 .mono {
-    @apply bg-slate-50 text-gray-800 border hover:bg-white
+    @apply bg-slate-50 text-gray-600 border hover:bg-white
 }
 .dark {
     @apply text-slate-50 bg-gray-800 border hover:bg-gray-700

@@ -1,5 +1,5 @@
 <template>
-    <button class="bg-sky-200 text-sky-700 bg-opacity-30 w-12 h-12 text-3xl flex justify-center items-center rounded-full hover:bg-sky-500 hover:text-gray-100 transition ease-in-out duration-300">
+    <button class="focus:outline-none bg-sky-200 text-sky-700 bg-opacity-30 w-12 h-12 text-3xl flex justify-center items-center rounded-full hover:bg-sky-500 hover:text-gray-100 transition ease-in-out duration-300">
         <slot />
     </button>
 </template>

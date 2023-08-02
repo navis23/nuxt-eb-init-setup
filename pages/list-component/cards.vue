@@ -66,7 +66,7 @@
                         </div>
                         <div class="ms-auto">
                             <ButtonBaseSmall class="mono">
-                                <Icon name="carbon:moon" class="text-2xl" />
+                                <Icon name="lucide:moon" class="text-2xl" />
                                 <span>
                                     Switch
                                 </span>
@@ -101,7 +101,7 @@
                         </div>
                         <div class="ms-auto">
                             <ButtonBaseSmall class="mono">
-                                <Icon name="carbon:moon" class="text-2xl" />
+                                <Icon name="lucide:moon" class="text-2xl" />
                                 <span>
                                     Edit
                                 </span>
@@ -136,7 +136,7 @@
                         </div>
                         <div class="ms-auto">
                             <ButtonBaseSmall class="mono">
-                                <Icon name="carbon:moon" class="text-2xl" />
+                                <Icon name="lucide:moon" class="text-2xl" />
                                 <span>
                                     Switch
                                 </span>
@@ -171,7 +171,7 @@
                         </div>
                         <div class="ms-auto">
                             <ButtonBaseSmall class="mono">
-                                <Icon name="carbon:moon" class="text-2xl" />
+                                <Icon name="lucide:moon" class="text-2xl" />
                                 <span>
                                     Switch
                                 </span>
@@ -199,9 +199,39 @@
                             <p class="text-xs text-gray-400">15 minutes ago</p>
                         </div>
                         <div class="ms-auto">
-                            <ButtonIcon class="mono sm">
-                                <Icon name="carbon:overflow-menu-horizontal" />
-                            </ButtonIcon>
+                            <HeadlessPopover class="relative">
+                                <HeadlessPopoverButton>
+                                    <ButtonIcon class="mono sm ui-open:rotate-90 ui-open:transform">
+                                        <Icon name="lucide:more-horizontal" />
+                                    </ButtonIcon>
+                                </HeadlessPopoverButton>
+
+                                <HeadlessPopoverPanel class="absolute z-10 bg-white border shadow-md p-4 mt-2 focus:outline-none end-0 origin-top-right rounded-md w-56">
+                                    <div class="grid grid-cols-1 gap-2 pb-4">
+                                        <nuxt-link to="/">
+                                            <ButtonBase class="dark">
+                                                Home
+                                            </ButtonBase>
+                                        </nuxt-link>
+                                        <nuxt-link to="/list-component">
+                                            <ButtonBase class="dark">
+                                                Components
+                                            </ButtonBase>
+                                        </nuxt-link>
+                                        <nuxt-link to="/list-component/cards">
+                                            <ButtonBase class="dark">
+                                                Cards
+                                            </ButtonBase>
+                                        </nuxt-link>
+                                        <nuxt-link to="/">
+                                            <ButtonBase class="dark">
+                                                Table
+                                            </ButtonBase>
+                                        </nuxt-link>
+                                    </div>
+                                </HeadlessPopoverPanel>
+                            </HeadlessPopover>
+                            
                         </div>
                     </div>
                     <div>
@@ -234,7 +264,7 @@
                         </div>
                         <div class="ms-auto">
                             <ButtonIcon class="mono sm">
-                                <Icon name="carbon:overflow-menu-horizontal" />
+                                <Icon name="lucide:more-horizontal" />
                             </ButtonIcon>
                         </div>
                     </div>
@@ -265,7 +295,7 @@
                         </div>
                         <div class="ms-auto">
                             <ButtonIcon class="mono sm">
-                                <Icon name="carbon:overflow-menu-horizontal" />
+                                <Icon name="lucide:more-horizontal" />
                             </ButtonIcon>
                         </div>
                     </div>
@@ -316,16 +346,16 @@
                         </div>
                         <div class="mt-4 flex items-center gap-3 sm:mt-0 sm:ms-auto">
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-instagram" />
+                                <Icon name="lucide:instagram" />
                             </ButtonIcon>
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-twitter" />
+                                <Icon name="lucide:twitter" />
                             </ButtonIcon>
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-facebook" />
+                                <Icon name="lucide:facebook" />
                             </ButtonIcon>
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-linkedin" />
+                                <Icon name="lucide:linkedin" />
                             </ButtonIcon>
                         </div>
                     </div>
@@ -372,16 +402,16 @@
                         </div>
                         <div class="mt-4 flex items-center gap-3 sm:ms-auto sm:mt-0">
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-instagram" />
+                                <Icon name="lucide:instagram" />
                             </ButtonIcon>
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-twitter" />
+                                <Icon name="lucide:twitter" />
                             </ButtonIcon>
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-facebook" />
+                                <Icon name="lucide:facebook" />
                             </ButtonIcon>
                             <ButtonIcon class="mono xs shadow-md">
-                                <Icon name="carbon:logo-linkedin" />
+                                <Icon name="lucide:linkedin" />
                             </ButtonIcon>
                         </div>
                     </div>

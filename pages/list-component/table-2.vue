@@ -3,7 +3,7 @@
         <nav class="bg-gray-800 text-white h-30 flex justify-between items-center w-full p-4 mb-5 rounded-md">
             <div class="font-bold flex items-center gap-x-2 text-sky-500 uppercase font-oswald">
                 <Icon name="lucide:table" class="text-4xl" />
-                <h1 class="text-3xl ">Table Version for EB UI</h1>
+                <h1 class="text-3xl ">Table Version 2 for EB UI</h1>
             </div>
             <div class="flex justify-between items-center gap-4 flex-wrap">
                 <nuxt-link to="/">
@@ -21,27 +21,43 @@
                         card
                     </Badge>
                 </nuxt-link>
-                <nuxt-link to="/list-component/tables">
+                <nuxt-link to="/list-component/table-1">
                     <Badge class="mono">
                         table
                     </Badge>
                 </nuxt-link>
             </div>
         </nav>
-        <!-- start table v1 -->
+        <div class="bg-gray-700 text-white flex flex-col justify-center items-center w-full p-3 mb-5 rounded-md">
+            <h1 class="font-oswald font-semibold pb-4 text-xl leading-none">Choose Table Version</h1>
+            <div class="flex justify-between items-center gap-4 flex-wrap">
+                <nuxt-link to="/list-component/table-1">
+                    <Badge class="mono">
+                        Table Version 1
+                    </Badge>
+                </nuxt-link>
+                <nuxt-link to="/list-component/table-2">
+                    <Badge class="mono">
+                        Table Version 2
+                    </Badge>
+                </nuxt-link>
+            </div>
+        </div>
+
+        <!-- start table v2 -->
         <div class="pb-10">
-            <h2 class="text-3xl font-oswald font-bold mb-3">Table Ver. 1</h2>
+            <h2 class="text-3xl font-oswald font-bold mb-3">Table Ver. 2</h2>
             <!-- table set container -->
             <div class="mt-6">
                 <!-- search & action -->
-                <div class="mb-6 flex w-full flex-col items-end justify-between gap-2 sm:flex-row">
+                <div class="mb-6 flex w-full flex-col items-end justify-between gap-4 sm:flex-row">
                     <div class="flex w-full items-center sm:w-auto">
                         <div class="relative w-full sm:w-auto">
                             <FormKit
                                 type="search"
                                 placeholder="Search..."
                                 prefix-icon="search"
-                                value="Barange ges"
+                                value="Search user"
                                 outer-class="!mb-0"
                                 inner-class="!mb-0"
                             />
@@ -64,13 +80,13 @@
                                         <table class="divide-gray-200 min-w-full table-fixed divide-y">
                                             <thead>
                                                 <th class="text-left font-semibold tracking-wider text-xs uppercase border-gray-200 last:border-none border-r bg-white px-4 py-5">
-                                                    product
+                                                    User
                                                 </th>
                                                 <th class="text-left font-semibold tracking-wider text-xs uppercase border-gray-200 last:border-none border-r bg-white px-4 py-5">
-                                                    name
+                                                    Location
                                                 </th>
                                                 <th class="text-left font-semibold tracking-wider text-xs uppercase border-gray-200 last:border-none border-r bg-white px-4 py-5">
-                                                    price
+                                                    Status
                                                 </th>
                                                 <th class="text-left font-semibold tracking-wider text-xs uppercase border-gray-200 last:border-none border-r bg-white px-4 py-5">
                                                     stock
@@ -83,32 +99,40 @@
                                                 </th>
                                             </thead>
                                             <tbody class="divide-gray-20 divide-y bg-white">
-                                                <tr v-for="product of (products as any[])" :key="product.id" class="hover:bg-gray-50 transition-colors duration-300">
+                                                <tr v-for="user of (users as any[])" :key="user.id" class="hover:bg-gray-50 transition-[height] duration-1000">
                                                     <td class="whitespace-nowrap text-sm p-4">
                                                         <div class="flex items-center">
-                                                            <nuxt-img :src="product.image" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center w-14 rounded-md" />
+                                                            <Avatar class="sm">
+                                                                <nuxt-img :src="`https://i.pravatar.cc/150?img=`+user.id" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center w-12 h-12 rounded-full" />
+                                                            </Avatar>
+                                                            <div class="ms-3 leading-tight">
+                                                                <h4 class="text-sm font-medium leading-tight">
+                                                                    {{ user.name.firstname }} {{ user.name.lastname }}
+                                                                </h4>
+                                                                <p class="text-xs text-gray-400">{{ user.email }}</p>
+                                                            </div>
                                                         </div>
                                                     </td>
-                                                    <td class="whitespace-nowrap text-xs p-4">
-                                                        {{ product.title }}
+                                                    <td class="whitespace-nowrap text-xs p-4 capitalize">
+                                                        {{ user.address.street }}, <span class="uppercase">{{ user.address.city }}</span>
                                                     </td>
                                                     <td class="whitespace-nowrap text-xs p-4">
-                                                        <span class="font-semibold">
-                                                            {{ product.price }}
-                                                        </span>
+                                                        <Badge class="warning">
+                                                            New
+                                                        </Badge>
                                                     </td>
                                                     <td class="whitespace-nowrap text-xs p-4">
-                                                        {{ product.rating.count }}
+                                                        2
                                                     </td>
                                                     <td class="whitespace-nowrap text-xs p-4">
                                                         <span class="text-sky-500">
-                                                            {{ product.category }}
+                                                            3
                                                         </span> 
                                                     </td>
-                                                    <td class="whitespace-nowrap text-sm p-4">
-                                                        <HeadlessPopover class="relative">
+                                                    <td class="whitespace-nowrap text-sm p-4 relative ">
+                                                        <HeadlessPopover class="static">
                                                             <HeadlessPopoverButton class="outline-none">
-                                                                <ButtonBase class="mono">
+                                                                <ButtonBase class="dark">
                                                                     <div class="flex gap-x-1 items-center justify-center leading-none">
                                                                         <p>Manage Data</p>
                                                                         <Icon name="lucide:chevron-down" class="text-xl font-bold transition-all duration-300 ui-open:rotate-180 ui-open:transform"/>
@@ -118,31 +142,39 @@
                                                                     <Icon name="lucide:more-horizontal" />
                                                                 </ButtonIcon> -->
                                                             </HeadlessPopoverButton>
-
-                                                            <HeadlessPopoverPanel class="absolute z-10 bg-gray-600 rounded-md end-0 origin-top-right px-2 py-4 mt-2 w-56 border">
-                                                                <div class="flex flex-col items-center w-full gap-3">
-                                                                    <ButtonBaseSmall class=" w-full">
-                                                                        <Icon name="lucide:eye" class="text-2xl" />
-                                                                        <span>
-                                                                            Detail Data
-                                                                        </span>
-                                                                    </ButtonBaseSmall>
-                                                    
-                                                                    <ButtonBaseSmall class="warning w-full">
-                                                                        <Icon name="lucide:edit-3" class="text-2xl" />
-                                                                        <span>
-                                                                            Edit Data
-                                                                        </span>
-                                                                    </ButtonBaseSmall>
-                                                    
-                                                                    <ButtonBaseSmall class="danger w-full">
-                                                                        <Icon name="lucide:trash" class="text-2xl" />
-                                                                        <span>
-                                                                            Delete Data
-                                                                        </span>
-                                                                    </ButtonBaseSmall>
-                                                                </div>
-                                                            </HeadlessPopoverPanel>
+                                                            <transition
+                                                                enter-active-class="transition duration-300 ease-out"
+                                                                enter-from-class="transform scale-95 opacity-0"
+                                                                enter-to-class="transform scale-100 opacity-100"
+                                                                leave-active-class="transition duration-200 ease-out"
+                                                                leave-from-class="transform scale-100 opacity-100"
+                                                                leave-to-class="transform scale-95 opacity-0"
+                                                            >
+                                                                <HeadlessPopoverPanel class="sticky z-10 bg-gray-700 rounded-md end-0 origin-top-right px-2 py-4 mt-2 w-full border">
+                                                                    <div class="flex flex-col items-center w-full gap-3">
+                                                                        <ButtonBaseSmall class=" w-full">
+                                                                            <Icon name="lucide:eye" class="text-2xl" />
+                                                                            <span>
+                                                                                Detail Data
+                                                                            </span>
+                                                                        </ButtonBaseSmall>
+                                                        
+                                                                        <ButtonBaseSmall class="warning w-full">
+                                                                            <Icon name="lucide:edit-3" class="text-2xl" />
+                                                                            <span>
+                                                                                Edit Data
+                                                                            </span>
+                                                                        </ButtonBaseSmall>
+                                                        
+                                                                        <ButtonBaseSmall class="danger w-full">
+                                                                            <Icon name="lucide:trash" class="text-2xl" />
+                                                                            <span>
+                                                                                Delete Data
+                                                                            </span>
+                                                                        </ButtonBaseSmall>
+                                                                    </div>
+                                                                </HeadlessPopoverPanel>
+                                                            </transition>
                                                         </HeadlessPopover>
                                         
                                                     </td>
@@ -209,7 +241,7 @@
 
 <script setup lang="ts">
 
-const { data: products, pending, error, refresh } = await useLazyFetch(() => 'https://fakestoreapi.com/products?limit=10')
+const { data: users, pending, error, refresh } = await useLazyFetch(() => 'https://fakestoreapi.com/users?limit=10')
 
 </script>
 

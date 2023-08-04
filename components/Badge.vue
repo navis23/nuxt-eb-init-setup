@@ -1,5 +1,5 @@
 <template>
-    <span class="bg-sky-100 text-sky-700 bg-opacity-30 h-6 px-2 font-semibold text-xs flex justify-center items-center rounded-md">
+    <span class="bg-sky-100 text-sky-700 bg-opacity-30 h-6 px-3 font-medium text-xs flex justify-center items-center rounded-full">
         <slot />
     </span>
 </template>

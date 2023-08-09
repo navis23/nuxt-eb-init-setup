@@ -203,24 +203,13 @@
                         </div>
                         <div class="ms-auto">
                             <HeadlessPopover class="relative">
-<<<<<<< HEAD
-                                <HeadlessPopoverButton>
-                                    <ButtonIcon class="mono sm ui-open:rotate-90 ui-open:transform">
-=======
                                 <HeadlessPopoverButton class="transition-all duration-300 ui-open:rotate-90 ui-open:transform">
                                     <ButtonIcon class="mono sm">
->>>>>>> tables
                                         <Icon name="lucide:more-horizontal" />
                                     </ButtonIcon>
                                 </HeadlessPopoverButton>
-
-<<<<<<< HEAD
-                                <HeadlessPopoverPanel class="absolute z-10 bg-white border shadow-md p-4 mt-2 focus:outline-none end-0 origin-top-right rounded-md w-56">
-                                    <div class="grid grid-cols-1 gap-2 pb-4">
-=======
                                 <HeadlessPopoverPanel class="absolute z-10 bg-white rounded-md end-0 origin-top-right p-2 mt-2 w-56 border">
                                     <div class="flex flex-col items-center w-full gap-2">
->>>>>>> tables
                                         <nuxt-link to="/">
                                             <ButtonBase class="dark">
                                                 Home
@@ -244,10 +233,6 @@
                                     </div>
                                 </HeadlessPopoverPanel>
                             </HeadlessPopover>
-<<<<<<< HEAD
-                            
-=======
->>>>>>> tables
                         </div>
                     </div>
                     <div>

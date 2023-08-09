@@ -19,11 +19,7 @@
     @apply bg-gray-500 hover:bg-gray-400
 }
 .mono {
-<<<<<<< HEAD
     @apply bg-slate-50 text-gray-600 border hover:bg-white
-=======
-    @apply bg-gray-50 text-gray-800 border hover:bg-white
->>>>>>> tables
 }
 .dark {
     @apply text-gray-50 bg-gray-800 border hover:bg-gray-700

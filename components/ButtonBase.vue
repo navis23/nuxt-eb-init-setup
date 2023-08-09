@@ -16,12 +16,16 @@
     @apply bg-yellow-600 hover:bg-yellow-500
 }
 .muted {
-    @apply bg-slate-500 hover:bg-slate-400
+    @apply bg-gray-500 hover:bg-gray-400
 }
 .mono {
+<<<<<<< HEAD
     @apply bg-slate-50 text-gray-600 border hover:bg-white
+=======
+    @apply bg-gray-50 text-gray-800 border hover:bg-white
+>>>>>>> tables
 }
 .dark {
-    @apply text-slate-50 bg-gray-800 border hover:bg-gray-700
+    @apply text-gray-50 bg-gray-800 border hover:bg-gray-700
 }
 </style>

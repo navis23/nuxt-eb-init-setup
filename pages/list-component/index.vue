@@ -1,8 +1,11 @@
 <template>
     <div class="px-4 lg:px-32 py-10">
         <nav class="bg-gray-800 text-white h-30 flex justify-between items-center w-full p-4 mb-5 rounded-md">
-            <h1 class="text-4xl text-sky-500 font-bold uppercase font-oswald">List Component for EB UI</h1>
-            <div class="flex justify-between items-center gap-4 ">
+            <div class="font-bold flex items-center gap-x-2 text-sky-500 uppercase font-oswald">
+                <Icon name="lucide:component" class="text-4xl" />
+                <h1 class="text-3xl ">List Components for EB UI</h1>
+            </div>
+            <div class="flex justify-between items-center gap-4 flex-wrap">
                 <nuxt-link to="/">
                     <Badge class="mono">
                         Home
@@ -18,7 +21,7 @@
                         card
                     </Badge>
                 </nuxt-link>
-                <nuxt-link to="/">
+                <nuxt-link to="/list-component/table-1">
                     <Badge class="mono">
                         table
                     </Badge>

@@ -1,8 +1,11 @@
 <template>
     <div class="px-4 lg:px-32 py-10">
         <nav class="bg-gray-800 text-white h-30 flex justify-between items-center w-full p-4 mb-5 rounded-md">
-            <h1 class="text-4xl font-bold text-sky-500 uppercase font-oswald">Card Version for EB UI</h1>
-            <div class="flex justify-between items-center gap-4 ">
+            <div class="font-bold flex items-center gap-x-2 text-sky-500 uppercase font-oswald">
+                <Icon name="lucide:gallery-vertical" class="text-4xl" />
+                <h1 class="text-3xl ">Card Version for EB UI</h1>
+            </div>
+            <div class="flex justify-between flex-wrap items-center gap-4 ">
                 <nuxt-link to="/">
                     <Badge class="mono">
                         Home
@@ -18,7 +21,7 @@
                         card
                     </Badge>
                 </nuxt-link>
-                <nuxt-link to="/">
+                <nuxt-link to="/list-component/table-1">
                     <Badge class="mono">
                         table
                     </Badge>
@@ -200,14 +203,24 @@
                         </div>
                         <div class="ms-auto">
                             <HeadlessPopover class="relative">
+<<<<<<< HEAD
                                 <HeadlessPopoverButton>
                                     <ButtonIcon class="mono sm ui-open:rotate-90 ui-open:transform">
+=======
+                                <HeadlessPopoverButton class="transition-all duration-300 ui-open:rotate-90 ui-open:transform">
+                                    <ButtonIcon class="mono sm">
+>>>>>>> tables
                                         <Icon name="lucide:more-horizontal" />
                                     </ButtonIcon>
                                 </HeadlessPopoverButton>
 
+<<<<<<< HEAD
                                 <HeadlessPopoverPanel class="absolute z-10 bg-white border shadow-md p-4 mt-2 focus:outline-none end-0 origin-top-right rounded-md w-56">
                                     <div class="grid grid-cols-1 gap-2 pb-4">
+=======
+                                <HeadlessPopoverPanel class="absolute z-10 bg-white rounded-md end-0 origin-top-right p-2 mt-2 w-56 border">
+                                    <div class="flex flex-col items-center w-full gap-2">
+>>>>>>> tables
                                         <nuxt-link to="/">
                                             <ButtonBase class="dark">
                                                 Home
@@ -231,7 +244,10 @@
                                     </div>
                                 </HeadlessPopoverPanel>
                             </HeadlessPopover>
+<<<<<<< HEAD
                             
+=======
+>>>>>>> tables
                         </div>
                     </div>
                     <div>

@@ -17,7 +17,7 @@
                         card
                     </Badge>
                 </nuxt-link>
-                <nuxt-link to="/">
+                <nuxt-link to="/list-component/table-1">
                     <Badge class="mono">
                         table
                     </Badge>

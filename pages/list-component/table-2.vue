@@ -89,10 +89,10 @@
                                                     Status
                                                 </th>
                                                 <th class="text-left font-semibold tracking-wider text-xs uppercase border-gray-200 last:border-none border-r bg-white px-4 py-5">
-                                                    stock
+                                                    code
                                                 </th>
                                                 <th class="text-left font-semibold tracking-wider text-xs uppercase border-gray-200 last:border-none border-r bg-white px-4 py-5">
-                                                    category
+                                                    Progress
                                                 </th>
                                                 <th class="text-left font-semibold tracking-wider text-xs uppercase border-gray-200 last:border-none border-r bg-white px-4 py-5">
                                                     action
@@ -122,12 +122,21 @@
                                                         </Badge>
                                                     </td>
                                                     <td class="whitespace-nowrap text-xs p-4">
-                                                        2
+                                                        {{ user.password }}
                                                     </td>
                                                     <td class="whitespace-nowrap text-xs p-4">
-                                                        <span class="text-sky-500">
-                                                            3
-                                                        </span> 
+                                                        <div class="flex items-center">
+                                                            <div class="relative">
+                                                                <svg role="progressbar" :aria-valuenow="user.address.number.toString().slice(0, 2)" aria-valuemax="100" class="block text-sky-500 -rotate-90" viewBox="0 0 45 45" width="50" height="50">
+                                                                    <circle class="text-gray-200 stroke-current" stroke-width="2" fill="none" cx="50%" cy="50%" r="15.91549431"></circle>
+                                                                    <circle class="transition-all duration-500 stroke-current" stroke-width="2" :stroke-dasharray="user.address.number.toString().slice(0, 2) +`,100`" stroke-linecap="round" fill="none" cx="50%" cy="50%" r="15.91549431"></circle>
+                                                                </svg>
+                                                                <span class="absolute start-1/2 top-1/2 z-10 ms-0.5 -translate-x-1/2 -translate-y-1/2 text-[0.65rem] font-semibold font-oswald tracking-tight leading-none">
+                                                                    {{ user.address.number.toString().slice(0, 2) }}%
+                                                                </span>
+                                                            </div>
+                                                            <span class="text-gray-400 text-xs">Completed</span>
+                                                        </div>
                                                     </td>
                                                     <td class="whitespace-nowrap text-sm p-4 relative ">
                                                         <HeadlessPopover class="static">
@@ -242,6 +251,19 @@
 <script setup lang="ts">
 
 const { data: users, pending, error, refresh } = await useLazyFetch(() => 'https://fakestoreapi.com/users?limit=10')
+
+const numb = ref(0)
+
+onMounted( () => {
+    fsco()
+    // await fetchProduct()
+})
+
+
+const fsco = () => {
+
+    numb.value = Math.floor(Math.random() * 101);
+}
 
 </script>
 

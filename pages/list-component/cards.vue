@@ -1,9 +1,9 @@
 <template>
     <div class="px-4 lg:px-32 py-10">
-        <nav class="bg-gray-800 text-white h-30 flex justify-between items-center w-full p-4 mb-5 rounded-md">
+        <nav class="bg-gray-800 text-white h-30 flex flex-col md:flex-row gap-4 justify-between items-center w-full p-4 mb-5 rounded-md">
             <div class="font-bold flex items-center gap-x-2 text-sky-500 uppercase font-oswald">
-                <Icon name="lucide:gallery-vertical" class="text-4xl" />
-                <h1 class="text-3xl ">Card Version for EB UI</h1>
+                <Icon name="lucide:gallery-vertical" class="text-3xl md:text-4xl" />
+                <h1 class="text-2xl md:text-3xl">Card Version for EB UI</h1>
             </div>
             <div class="flex justify-between flex-wrap items-center gap-4 ">
                 <nuxt-link to="/">
@@ -13,7 +13,7 @@
                 </nuxt-link>
                 <nuxt-link to="/list-component">
                     <Badge class="mono">
-                        small component
+                        component
                     </Badge>
                 </nuxt-link>
                 <nuxt-link to="/list-component/cards">

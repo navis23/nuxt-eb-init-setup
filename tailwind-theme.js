@@ -14,13 +14,13 @@ export default {
       message: 'text-red-500 mb-1 text-xs',
       messages: 'list-none p-0 mt-1 mb-0',
       outer: 'mb-4 formkit-disabled:opacity-50',
-      prefixIcon: 'w-10 text-sky-600 flex self-stretch grow-0 shrink-0 rounded-tl rounded-bl bg-gray-50 [&>svg]:w-full [&>svg]:max-w-[1em] [&>svg]:max-h-[1em] [&>svg]:m-auto',
-      suffixIcon: 'w-7 pr-3 p-3 flex self-stretch grow-0 shrink-0 [&>svg]:w-full [&>svg]:max-w-[1em] [&>svg]:max-h-[1em] [&>svg]:m-auto'
+      prefixIcon: 'w-10 text-gray-400 transition-all duration-200 flex self-stretch grow-0 shrink-0 rounded-tl rounded-bl bg-gray-50 [&>svg]:w-full [&>svg]:max-w-[1em] [&>svg]:max-h-[1em] [&>svg]:m-auto',
+      suffixIcon: 'w-10 pr-3 p-3 text-gray-500 flex self-stretch grow-0 shrink-0 [&>svg]:w-full [&>svg]:max-w-[1em] [&>svg]:max-h-[1em] [&>svg]:m-auto'
     },
   
     // Family styles apply to all inputs that share a common family
     'family:box': {
-      decorator: 'block relative h-5 w-5 mr-2 rounded bg-white bg-gradient-to-b from-transparent to-gray-200 ring-1 ring-gray-200 peer-checked:ring-sky-500 text-transparent peer-checked:text-sky-500',
+      decorator: 'block relative h-5 w-5 mr-2 rounded bg-white bg-gradient-to-b from-transparent to-gray-200 ring-1 ring-gray-200 transition-all duration-200 peer-checked:ring-sky-500 text-transparent peer-checked:text-sky-500',
       decoratorIcon: 'flex p-[3px] w-full h-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2',
       help: 'mb-2 mt-1.5',
       input: 'absolute w-0 h-0 overflow-hidden opacity-0 pointer-events-none peer',
@@ -37,7 +37,7 @@ export default {
     'family:dropdown': {
       dropdownWrapper: 'my-2 w-full shadow-lg rounded [&::-webkit-scrollbar]:hidden',
       emptyMessageInner: 'flex items-center justify-center text-sm p-2 text-center w-full text-gray-500 [&>span]:mr-3 [&>span]:ml-0',
-      inner: 'max-w-md relative flex ring-1 ring-gray-200 focus-within:ring-sky-500 focus-within:ring-2 rounded mb-1 formkit-disabled:focus-within:ring-gray-200 formkit-disabled:focus-within:ring-1 [&>span:first-child]:focus-within:text-sky-500',
+      inner: 'max-w-md relative flex ring-1 ring-gray-200 transition-all duration-200 transition-all duration-200 focus-within:ring-sky-500 focus-within:ring-2 rounded mb-1 formkit-disabled:focus-within:ring-gray-200 formkit-disabled:focus-within:ring-1 [&>span:first-child]:focus-within:text-sky-500',
       input: 'w-full px-3 py-2',
       listbox: 'bg-white shadow-lg rounded overflow-hidden',
       listboxButton: 'flex w-12 self-stretch justify-center mx-auto',
@@ -52,11 +52,11 @@ export default {
       selectIcon: 'flex box-content w-4 px-2 self-stretch grow-0 shrink-0 [&>svg]:w-[1em]',
     },
     'family:text': {
-      inner: 'flex items-center max-w-md ring-1 ring-gray-200 focus-within:ring-sky-500 focus-within:ring-2 [&>label:first-child]:focus-within:text-sky-500 rounded mb-1',
+      inner: 'flex items-center max-w-md ring-1 ring-gray-200 transition-all duration-200 focus-within:ring-sky-500 focus-within:ring-2 [&>label:first-child]:focus-within:text-sky-500 rounded mb-1',
       input: 'w-full px-3 py-2 border-none text-base text-gray-700 placeholder-gray-400',
     },
     'family:date': {
-      inner: 'flex items-center max-w-md ring-1 ring-gray-200 focus-within:ring-sky-500 focus-within:ring-2 [&>label:first-child]:focus-within:text-sky-500 rounded mb-1',
+      inner: 'flex items-center max-w-md ring-1 ring-gray-200 transition-all duration-200 focus-within:ring-sky-500 focus-within:ring-2 [&>label:first-child]:focus-within:text-sky-500 rounded mb-1',
       input: 'w-full px-3 py-2 border-none text-gray-700 placeholder-gray-400',
     },
   
@@ -89,13 +89,13 @@ export default {
       suffixIcon: '$reset w-4 ml-1 flex self-stretch grow-0 shrink-0 [&>svg]:max-w-[1em] [&>svg]:max-h-[1em] [&>svg]:m-auto'
     },
     select: {
-      inner: 'flex relative max-w-md items-center rounded mb-1 ring-1 ring-gray-200 focus-within:ring-sky-500 focus-within:ring-2 [&>span:first-child]:focus-within:text-sky-500',
+      inner: 'flex relative max-w-md items-center rounded mb-1 ring-1 ring-gray-200 transition-all duration-200 focus-within:ring-sky-500 focus-within:ring-2 [&>span:first-child]:focus-within:text-sky-500',
       input: 'w-full pl-3 pr-8 py-2 border-none text-base text-gray-700 placeholder-gray-400 formkit-multiple:p-0 data-[placeholder="true"]:text-gray-400 formkit-multiple:data-[placeholder="true"]:text-inherit',
       selectIcon: 'flex p-[3px] shrink-0 w-5 mr-2 -ml-[1.5em] h-full pointer-events-none [&>svg]:w-[1em]',
       option: 'formkit-multiple:p-3 formkit-multiple:text-sm text-gray-700'
     },
     textarea: {
-      inner: 'flex max-w-md rounded mb-1 ring-1 ring-gray-200 focus-within:ring-sky-500 [&>label:first-child]:focus-within:text-sky-500',
+      inner: 'flex max-w-md rounded mb-1 ring-1 ring-gray-200 transition-all duration-200 focus-within:ring-sky-500 [&>label:first-child]:focus-within:text-sky-500',
       input: 'block w-full h-32 px-3 py-3 border-none text-base text-gray-700 placeholder-gray-400 focus:shadow-outline',
     },
   

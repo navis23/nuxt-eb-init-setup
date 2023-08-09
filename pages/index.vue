@@ -9,7 +9,7 @@
                 </nuxt-link>
                 <nuxt-link to="/list-component">
                     <Badge class="mono">
-                        small component
+                        component
                     </Badge>
                 </nuxt-link>
                 <nuxt-link to="/list-component/cards">
@@ -67,31 +67,31 @@
                 min="0"
                 max="11"
                 help="Select your volume level."
-                />
-                <p class="font-oswald uppercase text-teal-500 -mt-3 mb-2">
-                    {{ value }}
-                </p>
-                <FormKit
-                    v-model="time"
-                    type="time"
-                    label="Time"
-                    value="23:15"
-                    help="jam piro muleh kowe le?"
-                />
-                <p class="font-oswald uppercase text-fuchsia-500 -mt-3 mb-2">
-                    {{ time }}
-                </p>
+            />
+            <p class="font-oswald uppercase text-teal-500 -mt-3 mb-2">
+                {{ value }}
+            </p>
+            <FormKit
+                v-model="time"
+                type="time"
+                label="Time"
+                value="23:15"
+                help="jam piro muleh kowe le?"
+            />
+            <p class="font-oswald uppercase text-fuchsia-500 -mt-3 mb-2">
+                {{ time }}
+            </p>
 
-                <FormKit
-                    v-model="name"
-                    type="text"
-                    label="Your username"
-                    placeholder="you nameeeeee"
-                    help="Pick a username people will remember!"
-                />
-                <p class="font-oswald uppercase text-rose-500 -mt-3 mb-2">
-                    {{ name }}
-                </p>
+            <FormKit
+                v-model="name"
+                type="text"
+                label="Your username"
+                placeholder="you nameeeeee"
+                help="Pick a username people will remember!"
+            />
+            <p class="font-oswald uppercase text-rose-500 -mt-3 mb-2">
+                {{ name }}
+            </p>
         </div>
 
         <!-- test call api with axios -->

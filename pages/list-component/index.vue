@@ -1,9 +1,9 @@
 <template>
     <div class="px-4 lg:px-32 py-10">
-        <nav class="bg-gray-800 text-white h-30 flex justify-between items-center w-full p-4 mb-5 rounded-md">
+        <nav class="bg-gray-800 text-white h-30 flex flex-col md:flex-row gap-4 justify-between items-center w-full p-4 mb-5 rounded-md">
             <div class="font-bold flex items-center gap-x-2 text-sky-500 uppercase font-oswald">
-                <Icon name="lucide:component" class="text-4xl" />
-                <h1 class="text-3xl ">List Components for EB UI</h1>
+                <Icon name="lucide:component" class="text-3xl md:text-4xl" />
+                <h1 class="text-2xl md:text-3xl">List Components for EB UI</h1>
             </div>
             <div class="flex justify-between items-center gap-4 flex-wrap">
                 <nuxt-link to="/">
@@ -13,7 +13,7 @@
                 </nuxt-link>
                 <nuxt-link to="/list-component">
                     <Badge class="mono">
-                        small component
+                        component
                     </Badge>
                 </nuxt-link>
                 <nuxt-link to="/list-component/cards">
@@ -524,11 +524,327 @@
                 </div>
             </div>
         </div>
+
+        <!-- group of headless function -->
+        <div  class="pb-10">
+            <h2 class="text-sky-600 text-3xl font-oswald font-bold mb-3">Modal</h2>
+            <div class="border p-4 rounded-xl bg-white">
+                <!-- begin badge -->
+                <p class="mt-3">#Various example of modal style</p>
+                <div class="py-4 flex flex-wrap gap-4">
+                    <ButtonBaseExpanded @click="openModalOne()">
+                        Open Modal V1
+                    </ButtonBaseExpanded>
+                    <ButtonBaseExpanded class="dark" @click="openModalTwo()">
+                        Open Modal V2
+                    </ButtonBaseExpanded>
+                    <ButtonBaseExpanded class="mono" @click="openModalThree()">
+                        Open Modal V3
+                    </ButtonBaseExpanded>
+                    <ButtonBaseExpanded class="warning" @click="openModalFour()">
+                        Open Modal V4
+                    </ButtonBaseExpanded>
+                </div>
+            </div>
+        </div>
+
+        <!-- group of modal -->
+
+        <!-- modal example v1 -->
+        <ClientOnly>  
+            <HeadlessDialog :open="isOpenAdd" class="relative z-50">
+                <!-- The backdrop, rendered as a fixed sibling to the panel container -->
+                <div class="fixed inset-0 bg-black/30" aria-hidden="true" />
+
+                <!-- Full-screen container to center the panel -->
+                <div class="fixed inset-0 flex items-center justify-center p-4">
+
+                <!-- The actual dialog panel -->
+                <HeadlessDialogPanel class="w-full max-w-md px-12 py-8 rounded-lg bg-white text-gray-700">
+                    <HeadlessDialogTitle class="pb-3">
+                        <h3 class="text-xl font-semibold font-oswald text-sky-500 border-b-2 pb-4">
+                            Tes Modal Bruhh
+                        </h3>
+                    </HeadlessDialogTitle>
+                        <p>testing for base modal</p>
+                        
+                        <div class="flex items-center gap-2 mt-4">
+                            <ButtonBase @click="closeModalOne()" class="mono w-full">
+                                Close
+                            </ButtonBase>
+                            <ButtonBase @click="closeModalOne()" class="dark w-full">
+                                Exit
+                            </ButtonBase>
+                        </div>
+                        
+                    <!-- ... -->
+                </HeadlessDialogPanel>
+                </div>
+            </HeadlessDialog>
+        </ClientOnly>
+
+        <!-- modal example v2 -->
+        <ClientOnly>
+            <HeadlessTransitionRoot appear :show="isOpenAddTwo" as="template">
+                <HeadlessDialog as="div" class="relative z-10">
+                    <HeadlessTransitionChild
+                        as="template"
+                        enter="duration-300 ease-out"
+                        enter-from="opacity-0"
+                        enter-to="opacity-100"
+                        leave="duration-200 ease-in"
+                        leave-from="opacity-100"
+                        leave-to="opacity-0"
+                    >
+                        <div class="fixed inset-0 bg-black bg-opacity-50" />
+                    </HeadlessTransitionChild>
+
+                    <div class="fixed inset-0 overflow-y-auto">
+                        <div class="flex min-h-full items-center justify-center p-4 text-center">
+                            <HeadlessTransitionChild
+                                as="template"
+                                enter="duration-300 ease-out"
+                                enter-from="opacity-0 scale-95"
+                                enter-to="opacity-100 scale-100"
+                                leave="duration-200 ease-in"
+                                leave-from="opacity-100 scale-100"
+                                leave-to="opacity-0 scale-95"
+                            >
+                                <HeadlessDialogPanel class="w-full max-w-xl transform overflow-hidden rounded-xl bg-white p-4 text-left align-middle shadow-xl transition-all">
+                                    
+                                    <!-- top card v3 -->
+                                    <div class="flex flex-col items-center border-b p-6 sm:flex-row">
+                                        <div class="flex flex-col items-center gap-3 sm:flex-row">
+                                            <Avatar class="lg">
+                                                <nuxt-img src="/img/ava01.png" format="webp" loading="lazy" sizes="sm:20vw" class="object-cover object-center h-20 w-20 rounded-full" />
+                                            </Avatar>
+                                            <div class="text-center sm:text-left">
+                                                <h4 class="font-medium leading-tight">
+                                                    Mbingkamp Syy
+                                                </h4>
+                                                <p class="text-sm text-gray-400">
+                                                    Software Engineer
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4 flex items-center gap-3 sm:mt-0 sm:ms-auto">
+                                            <ButtonIcon class="mono xs shadow-md">
+                                                <Icon name="lucide:instagram" />
+                                            </ButtonIcon>
+                                            <ButtonIcon class="mono xs shadow-md">
+                                                <Icon name="lucide:twitter" />
+                                            </ButtonIcon>
+                                            <ButtonIcon class="mono xs shadow-md">
+                                                <Icon name="lucide:facebook" />
+                                            </ButtonIcon>
+                                            <ButtonIcon class="mono xs shadow-md">
+                                                <Icon name="lucide:linkedin" />
+                                            </ButtonIcon>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- bottom card v3 -->
+                                    <div class="flex flex-col items-center justify-between px-6 py-4 sm:flex-row">
+                                        <div class="w-full grow space-y-1 sm:w-auto sm:max-w-[260px]">
+                                            <div class="flex items-center justify-between">
+                                                <h4 class="text-sm">
+                                                    Progress
+                                                </h4>
+                                                <p class="text-gray-400 text-sm">
+                                                    12%
+                                                </p>
+                                            </div>
+                                            <div role="progressbar" aria-valuenow="12" aria-valuemax="100" class="relative w-full overflow-hidden h-1 rounded-full bg-gray-400">
+                                                <div class="absolute start-0 top-0 h-full transition-all duration-300 bg-sky-500 rounded-full" style="width: 12%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4 w-full sm:mt-0 sm:w-auto">
+                                            <ButtonBaseExpanded @click="closeModalTwo()" class="mono">
+                                                Close Profile
+                                            </ButtonBaseExpanded>
+                                        </div>
+                                    </div>
+                                </HeadlessDialogPanel>
+                            </HeadlessTransitionChild>
+                        </div>
+                    </div>
+                </HeadlessDialog>
+            </HeadlessTransitionRoot>
+        </ClientOnly>
+
+        <!-- modal example v3 -->
+        <ClientOnly>
+            <HeadlessTransitionRoot appear :show="isOpenAddThree" as="template">
+                <HeadlessDialog as="div" class="relative z-10">
+                    <HeadlessTransitionChild
+                        as="template"
+                        enter="duration-300 ease-out"
+                        enter-from="opacity-0"
+                        enter-to="opacity-100"
+                        leave="duration-200 ease-in"
+                        leave-from="opacity-100"
+                        leave-to="opacity-0"
+                    >
+                        <div class="fixed inset-0 bg-black bg-opacity-50" />
+                    </HeadlessTransitionChild>
+
+                    <div class="fixed inset-0 overflow-y-auto">
+                        <div class="flex min-h-full items-center justify-center p-4 text-center">
+                            <HeadlessTransitionChild
+                                as="template"
+                                enter="duration-300 ease-out"
+                                enter-from="opacity-0 scale-95"
+                                enter-to="opacity-100 scale-100"
+                                leave="duration-200 ease-in"
+                                leave-from="opacity-100 scale-100"
+                                leave-to="opacity-0 scale-95"
+                            >
+                                <HeadlessDialogPanel class="w-full max-w-lg transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                                    <HeadlessDialogTitle as="h3" class="text-lg font-medium leading-6 text-gray-900">
+                                        Payment successful
+                                    </HeadlessDialogTitle>
+                                    
+                                    <div class="mt-2">
+                                        <p class="text-sm text-gray-500">
+                                        Your payment has been successfully submitted. We sent you
+                                        an email with all of the details of your order.
+                                        </p>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <ButtonBase @click="closeModalThree()">
+                                            Ok, Thanks
+                                        </ButtonBase>
+                                    </div>
+                                </HeadlessDialogPanel>
+                            </HeadlessTransitionChild>
+                        </div>
+                    </div>
+                </HeadlessDialog>
+            </HeadlessTransitionRoot>
+        </ClientOnly>
+
+        <!-- modal example v4 -->
+        <ClientOnly>
+            <HeadlessTransitionRoot appear :show="isOpenAddFour" as="template">
+                <HeadlessDialog as="div" class="relative z-10">
+                    <HeadlessTransitionChild
+                        as="template"
+                        enter="duration-300 ease-out"
+                        enter-from="opacity-0"
+                        enter-to="opacity-100"
+                        leave="duration-200 ease-in"
+                        leave-from="opacity-100"
+                        leave-to="opacity-0"
+                    >
+                        <div class="fixed inset-0 bg-black bg-opacity-50" />
+                    </HeadlessTransitionChild>
+
+                    <div class="fixed inset-0 overflow-y-auto">
+                        <div class="flex min-h-full items-center justify-center p-4 text-center">
+                            <HeadlessTransitionChild
+                                as="template"
+                                enter="duration-300 ease-out"
+                                enter-from="opacity-0 scale-95"
+                                enter-to="opacity-100 scale-100"
+                                leave="duration-200 ease-in"
+                                leave-from="opacity-100 scale-100"
+                                leave-to="opacity-0 scale-95"
+                            >
+                                <HeadlessDialogPanel class="w-full max-w-lg transform overflow-hidden rounded-lg bg-white p-6 text-left align-middle shadow-xl transition-all">
+                                    <HeadlessDialogTitle as="h3" class="text-xl font-semibold uppercase font-oswald text-sky-500 border-b-2 pb-2">
+                                            Modal with Form
+                                    </HeadlessDialogTitle>
+                                    
+                                    <div class="mt-4 mb-5">
+                                        <FormKit
+                                            type="text"
+                                            prefix-icon="avatarMan"
+                                            label="Username"
+                                            placeholder="you nameeeeee"
+                                            help="Pick a username people will remember!"
+                                        />
+                                        <FormKit
+                                            type="range"
+                                            label="Volume"
+                                            min="0"
+                                            max="11"
+                                            help="Select your volume level."
+                                        />
+                                        <FormKit
+                                            type="time"
+                                            label="Time"
+                                            value="23:15"
+                                            help="jam piro muleh kowe le?"
+                                        />
+                                        <FormKit
+                                            type="password"
+                                            label="Password"
+                                            value="mySecretPassword!"
+                                            prefix-icon="password"
+                                            suffix-icon="eyeClosed"
+                                            @suffix-icon-click="visiblePassword"
+                                            help="Enter a new password"
+                                        />
+                                    </div>
+
+                                    <div class="border-t-2 pt-4">
+                                        <ButtonBase @click="closeModalFour()">
+                                            Ok, Thanks
+                                        </ButtonBase>
+                                    </div>
+                                </HeadlessDialogPanel>
+                            </HeadlessTransitionChild>
+                        </div>
+                    </div>
+                </HeadlessDialog>
+            </HeadlessTransitionRoot>
+        </ClientOnly>
     </div>
 </template>
 
 <script setup lang="ts">
+const isOpenAdd = ref(false)
+const isOpenAddTwo = ref(false)
+const isOpenAddThree = ref(false)
+const isOpenAddFour = ref(false)
 
+const openModalOne = () => {
+    isOpenAdd.value = true
+}
+
+const closeModalOne = () => {
+    isOpenAdd.value = false
+}
+
+const openModalTwo = () => {
+    isOpenAddTwo.value = true
+}
+
+const closeModalTwo = () => {
+    isOpenAddTwo.value = false
+}
+
+const openModalThree = () => {
+    isOpenAddThree.value = true
+}
+
+const closeModalThree = () => {
+    isOpenAddThree.value = false
+}
+
+const openModalFour = () => {
+    isOpenAddFour.value = true
+}
+
+const closeModalFour = () => {
+    isOpenAddFour.value = false
+}
+
+const visiblePassword = (node : any, e : any) => {
+    node.props.suffixIcon = node.props.suffixIcon === 'eye' ? 'eyeClosed' : 'eye'
+    node.props.type = node.props.type === 'password' ? 'text' : 'password'
+}
 </script>
 
 <style scoped>

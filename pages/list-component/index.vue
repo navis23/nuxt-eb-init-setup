@@ -529,7 +529,7 @@
         <div  class="pb-10">
             <h2 class="text-sky-600 text-3xl font-oswald font-bold mb-3">Modal</h2>
             <div class="border p-4 rounded-xl bg-white">
-                <!-- begin badge -->
+                <!-- begin modal -->
                 <p class="mt-3">#Various example of modal style</p>
                 <div class="py-4 flex flex-wrap gap-4">
                     <ButtonBaseExpanded @click="openModalOne()">
@@ -544,6 +544,97 @@
                     <ButtonBaseExpanded class="warning" @click="openModalFour()">
                         Open Modal V4
                     </ButtonBaseExpanded>
+                    <ButtonBaseExpanded class="danger" @click="openModalFive()">
+                        Open Modal V5
+                    </ButtonBaseExpanded>
+                </div>
+
+                <!-- begin switch & popover -->
+                <p class="mt-3">#Various example switch & popover</p>
+                <div class="py-4 flex flex-wrap items-center gap-4 ">
+                    <!-- switch example v1 -->
+                    <div class="flex gap-x-2 items-center">
+                        <HeadlessSwitch
+                            v-model="enabled"
+                            :class="enabled ? 'bg-sky-500' : 'bg-gray-200'"
+                            class="relative inline-flex h-6 w-11 items-center rounded-full"
+                        >
+                            <span class="sr-only">Enable notifications</span>
+                            <span
+                            :class="enabled ? 'translate-x-6' : 'translate-x-1'"
+                            class="inline-block h-4 w-4 transform rounded-full bg-white transition"
+                            />
+                        </HeadlessSwitch>
+                        <span >
+                            <Icon :name=" enabled ? 'lucide:sun' : 'lucide:moon'" :class="enabled ? 'text-amber-500' : 'text-indigo-500'" class="text-5xl font-bold transition-all ease-in-out duration-400" />
+                        </span>
+                    </div>
+
+                    <!-- switch example v2 -->
+                    <div class="flex flex-col gap-2 items-start justify-start">
+                        <div class="flex gap-x-2">
+                            <HeadlessSwitch
+                                v-model="enabledTwo"
+                                :class="enabledTwo ? 'bg-emerald-500' : 'bg-gray-200'"
+                                class="relative inline-flex h-6 w-11 items-center rounded-full"
+                            >
+                                <span class="sr-only">Enable notifications</span>
+                                <span
+                                :class="enabledTwo ? 'translate-x-6' : 'translate-x-1'"
+                                class="inline-block h-4 w-4 transform rounded-full bg-white transition"
+                                />
+                            </HeadlessSwitch>
+                            <p v-show="!enabledTwo" class="transition-all duration-400 text-gray-400 ">
+                                Look more content
+                            </p>
+                            <p v-show="enabledTwo" class="transitio-all  duration-400 text-emerald-500 ">
+                                You got that right??
+                            </p>
+                        </div>
+                        <ClientOnly>
+                            <HeadlessTransitionRoot
+                                :show="enabledTwo"
+                                enter="transition-opacity duration-400"
+                                enter-from="opacity-0"
+                                enter-to="opacity-100"
+                                leave="transition-opacity duration-400"
+                                leave-from="opacity-100"
+                                leave-to="opacity-0"
+                            >
+                                <div class="mt-2">
+                                    <FormKit
+                                        type="text"
+                                        prefix-icon="avatarMan"
+                                        label="Username"
+                                        placeholder="you nameeeeee"
+                                        help="Pick a username people will remember!"
+                                    />
+                                    <FormKit
+                                        type="range"
+                                        label="Volume"
+                                        min="0"
+                                        max="11"
+                                        help="Select your volume level."
+                                    />
+                                    <FormKit
+                                        type="time"
+                                        label="Time"
+                                        value="23:15"
+                                        help="jam piro muleh kowe le?"
+                                    />
+                                    <FormKit
+                                        type="password"
+                                        label="Password"
+                                        value="mySecretPassword!"
+                                        prefix-icon="password"
+                                        suffix-icon="eyeClosed"
+                                        @suffix-icon-click="visiblePassword"
+                                        help="Enter a new password"
+                                    />
+                                </div>
+                            </HeadlessTransitionRoot>
+                        </ClientOnly>
+                    </div>
                 </div>
             </div>
         </div>
@@ -800,14 +891,210 @@
                 </HeadlessDialog>
             </HeadlessTransitionRoot>
         </ClientOnly>
+        
+        <!-- modal example v5 -->
+        <ClientOnly>
+            <HeadlessTransitionRoot appear :show="isOpenAddFive" as="template">
+                <HeadlessDialog as="div" class="relative z-10">
+                    <HeadlessTransitionChild
+                        as="template"
+                        enter="duration-300 ease-out"
+                        enter-from="opacity-0"
+                        enter-to="opacity-100"
+                        leave="duration-200 ease-in"
+                        leave-from="opacity-100"
+                        leave-to="opacity-0"
+                    >
+                        <div class="fixed inset-0 bg-black bg-opacity-50" />
+                    </HeadlessTransitionChild>
+
+                    <div class="fixed inset-0 overflow-y-auto">
+                        <div class="flex min-h-full items-center justify-center p-4 text-center">
+                            <HeadlessTransitionChild
+                                as="template"
+                                enter="duration-300 ease-out"
+                                enter-from="opacity-0 scale-95"
+                                enter-to="opacity-100 scale-100"
+                                leave="duration-200 ease-in"
+                                leave-from="opacity-100 scale-100"
+                                leave-to="opacity-0 scale-95"
+                            >
+                                <HeadlessDialogPanel class="w-full max-w-4xl transform overflow-hidden rounded-lg bg-white p-6 text-left align-middle shadow-xl transition-all">
+                                    <HeadlessDialogTitle as="div" class="flex justify-between items-center border-b-2 pb-3">
+                                            <h3 class="text-2xl font-semibold uppercase font-oswald text-sky-500 ">
+                                                Modal with Table
+                                            </h3>
+                                            <p>
+                                                <ButtonIcon @click="closeModalFive()" class="sm muted">
+                                                    <Icon name="lucide:x" />
+                                                </ButtonIcon>
+                                            </p>
+                                    </HeadlessDialogTitle>
+                                    
+                                    <!-- table & pagination -->
+                                    <div class="mt-2">
+                                        <!-- table start -->
+                                        <div class="w-full">
+                                            <div class="flex flex-col">
+                                                <div class="overflow-x-auto border rounded-md">
+                                                    <div class="inline-block min-w-full align-middle">
+                                                        <div class="overflow-hidden">
+                                                            <table class="divide-gray-200 min-w-full table-fixed divide-y">
+                                                                <thead>
+                                                                    <th class="text-left font-semibold tracking-wider text-xs uppercase border-gray-200 last:border-none border-r bg-white px-3 py-3">
+                                                                        Id
+                                                                    </th>
+                                                                    <th class="text-left font-semibold tracking-wider text-xs uppercase border-gray-200 last:border-none border-r bg-white px-3 py-3">
+                                                                        Task
+                                                                    </th>
+                                                                    <th class="text-left font-semibold tracking-wider text-xs uppercase border-gray-200 last:border-none border-r bg-white px-3 py-3">
+                                                                        Status
+                                                                    </th>
+                                                                    <th class="text-left font-semibold tracking-wider text-xs uppercase border-gray-200 last:border-none border-r bg-white px-3 py-3">
+                                                                        Progress
+                                                                    </th>
+                                                                    <th class="text-left font-semibold tracking-wider text-xs uppercase border-gray-200 last:border-none border-r bg-white px-3 py-3">
+                                                                        action
+                                                                    </th>
+                                                                </thead>
+                                                                <tbody class="divide-gray-20 divide-y bg-white">
+                                                                    <tr v-for="task of (tasks as any[])" :key="task.id" class="hover:bg-gray-50 transition-[height] duration-1000">
+                                                                        <td class="whitespace-nowrap text-xs py-2 px-3">
+                                                                            {{ task.id }}
+                                                                        </td>
+                                                                        <td class="whitespace-nowrap text-xs py-2 px-3">
+                                                                            {{ task.title }}
+                                                                        </td>
+                                                                        <td class="whitespace-nowrap text-xs py-2 px-3">
+                                                                            <Badge v-if="task.completed == true">
+                                                                                Finished
+                                                                            </Badge>
+                                                                            <Badge v-if="task.completed == false" class="warning">
+                                                                                On Progress
+                                                                            </Badge>
+                                                                        </td>
+                                                                        <td class="whitespace-nowrap text-xs py-2 px-3">
+                                                                            <div class="flex items-center">
+                                                                                <div class="relative">
+                                                                                    <svg role="progressbar" :aria-valuenow="task.title.length" aria-valuemax="100" class="block text-sky-500 -rotate-90" viewBox="0 0 45 45" width="50" height="50">
+                                                                                        <circle class="text-gray-200 stroke-current" stroke-width="2" fill="none" cx="50%" cy="50%" r="15.91549431"></circle>
+                                                                                        <circle class="transition-all duration-500 stroke-current" stroke-width="2" :stroke-dasharray="task.title.length +`,100`" stroke-linecap="round" fill="none" cx="50%" cy="50%" r="15.91549431"></circle>
+                                                                                    </svg>
+                                                                                    <span class="absolute start-1/2 top-1/2 z-10 ms-0.5 -translate-x-1/2 -translate-y-1/2 text-[0.65rem] font-semibold font-oswald tracking-tight leading-none">
+                                                                                        {{ task.title.length }}%
+                                                                                    </span>
+                                                                                </div>
+                                                                                <span class="text-gray-400 text-xs">Completed</span>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="whitespace-nowrap text-sm py-2 px-3">
+                                                                            <ButtonBaseSmall class="warning">
+                                                                                <Icon name="lucide:edit-3" class="text-2xl" />
+                                                                                <span>
+                                                                                    Edit
+                                                                                </span>
+                                                                            </ButtonBaseSmall>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- pagination start -->
+                                        <div class="mt-6">
+                                            <div class="inline-flex w-full flex-col md:flex-row md:justify-between">
+                                                <ul class="mb-4 inline-flex flex-wrap justify-center gap-2 border p-1 md:mb-0 md:gap-1 rounded-xl">
+                                                    <li>
+                                                        <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center text-sm transition-all duration-300 border border-gray-200 hover:bg-gray-100 text-gray-500 hover:text-gray-700 bg-white rounded-xl">
+                                                            <Icon name="lucide:chevron-left" class="text-xl"/>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center border text-sm transition-all duration-300 bg-sky-500 border-sky-500 shadow-sky-500/50 text-white shadow-sm rounded-xl">1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center text-sm transition-all duration-300 border border-gray-200 hover:bg-gray-100 text-gray-500 hover:text-gray-700 bg-white rounded-xl">2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center text-sm transition-all duration-300 border border-gray-200 hover:bg-gray-100 text-gray-500 hover:text-gray-700 bg-white rounded-xl">3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center text-sm transition-all duration-300 border border-gray-200 hover:bg-gray-100 text-gray-500 hover:text-gray-700 bg-white rounded-xl">4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center text-sm transition-all duration-300 border border-gray-200 hover:bg-gray-100 text-gray-500 hover:text-gray-700 bg-white rounded-xl">5</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="router-link-active router-link-exact-active flex h-10 w-10 items-center justify-center text-sm transition-all duration-300 border border-gray-200 hover:bg-gray-100 text-gray-500 hover:text-gray-700 bg-white rounded-xl">
+                                                            <Icon name="lucide:chevron-right" class="text-xl"/>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="flex items-center justify-end gap-1 p-1 rounded-xl">
+                                                    <FormKit
+                                                        type="select"
+                                                        name="count_data"
+                                                        :options="[
+                                                            10,
+                                                            25,
+                                                            50,
+                                                            100
+                                                        ]"
+                                                        outer-class="!mb-0"
+                                                        inner-class="!mb-0"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="border-t-2 pt-4">
+                                        <ButtonBase @click="closeModalFive()">
+                                            Ok, Thanks
+                                        </ButtonBase>
+                                    </div>
+                                </HeadlessDialogPanel>
+                            </HeadlessTransitionChild>
+                        </div>
+                    </div>
+                </HeadlessDialog>
+            </HeadlessTransitionRoot>
+        </ClientOnly>
+
     </div>
 </template>
 
 <script setup lang="ts">
+import axios from 'axios';
+
 const isOpenAdd = ref(false)
 const isOpenAddTwo = ref(false)
 const isOpenAddThree = ref(false)
 const isOpenAddFour = ref(false)
+const isOpenAddFive = ref(false)
+const tasks = ref()
+const enabled = ref(false)
+const enabledTwo = ref(false)
+
+onMounted( async () => {
+    await fetchTask()
+    // await fetchProduct()
+})
+
+const fetchTask = async () => {
+    await axios.get('https://jsonplaceholder.typicode.com/todos?limit=10', {
+        headers: {
+                "Content-Type": "multipart/form-data",
+                "Access-Control-Allow-Origin": "*"
+        }
+    })
+    .then(res => {
+        tasks.value = res.data
+    })
+}
 
 const openModalOne = () => {
     isOpenAdd.value = true
@@ -841,10 +1128,20 @@ const closeModalFour = () => {
     isOpenAddFour.value = false
 }
 
+const openModalFive = () => {
+    isOpenAddFive.value = true
+}
+
+const closeModalFive = () => {
+    isOpenAddFive.value = false
+}
+
 const visiblePassword = (node : any, e : any) => {
     node.props.suffixIcon = node.props.suffixIcon === 'eye' ? 'eyeClosed' : 'eye'
     node.props.type = node.props.type === 'password' ? 'text' : 'password'
 }
+
+
 </script>
 
 <style scoped>
